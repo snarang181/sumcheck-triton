@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u experiments/h100/tools/triton_sweep_treduce.py --workloads zk_verifiable_asics --rounds 28 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep_treduce/cases/zk_verifiable_asics_bw64_r28_triton.csv
+zk_verifiable_asics      field=p64_goldilocks               rounds=28 first_ms=115.599 median_ms=67.324 checksum=9431506424483
+experiments/h100/sweep_treduce/cases/zk_verifiable_asics_bw64_r28_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_verifiable_asics --rounds 28 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep_treduce/cases/zk_verifiable_asics_bw64_r28_cuda.csv
+zk_verifiable_asics field=p64_goldilocks rounds=28 first_ms=53.6184 median_ms=53.79 checksum=9431506424483
+zk_verifiable_asics      field=p64_goldilocks               rounds=28 triton_ms=67.324 cuda_ms=53.79 checksum_match=true speedup=1.251608
+experiments/h100/sweep_treduce/cases/zk_verifiable_asics_bw64_r28_joined.csv

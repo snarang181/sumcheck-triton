@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u experiments/h100/tools/triton_sweep_treduce.py --workloads zk_witness_id_point_2 --rounds 18 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep_treduce/cases/zk_witness_id_point_2_bw64_r18_triton.csv
+zk_witness_id_point_2    field=p64_goldilocks               rounds=18 first_ms=70.557 median_ms=11.878 checksum=9324305661801
+experiments/h100/sweep_treduce/cases/zk_witness_id_point_2_bw64_r18_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_witness_id_point_2 --rounds 18 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep_treduce/cases/zk_witness_id_point_2_bw64_r18_cuda.csv
+zk_witness_id_point_2 field=p64_goldilocks rounds=18 first_ms=3.35203 median_ms=2.97597 checksum=9324305661801
+zk_witness_id_point_2    field=p64_goldilocks               rounds=18 triton_ms=11.878 cuda_ms=2.97597 checksum_match=true speedup=3.991304
+experiments/h100/sweep_treduce/cases/zk_witness_id_point_2_bw64_r18_joined.csv

@@ -1,0 +1,2 @@
+workload,polynomial,backend,field,arithmetic,layout,point_mode,bit_width,limbs,modulus_hex,rounds,N,vars,degree,terms,warmups,repeats,timing_mode,challenge_mode,first_ms,median_ms,eval_median_ms,challenge_median_ms,fold_median_ms,total_median_ms,input_mib,checksum,status
+zk_opencheck,y1*k1 + y2*k2 + y3*k3 + y4*k4 + y5*k5 + y6*k6,triton-sumcheck-prime-field-montgomery-element-layout-specialized-points,p32_2^32_minus_5,montgomery,element,specialized,32,1,0xfffffffb,24,16777216,12,2,6,2,10,whole-run,fixed,65.625,16.168,0.000,0.000000,0.000,16.168,768.000000,2100535341255,ok

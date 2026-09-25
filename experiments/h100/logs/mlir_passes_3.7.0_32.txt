@@ -1,0 +1,104 @@
+===-------------------------------------------------------------------------===
+                         ... Execution time report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.1409 seconds
+
+  ----Wall Time----  ----Name----
+    0.0717 ( 50.9%)  Inliner
+    0.0005 (  0.3%)    (A) CallGraph
+    0.0446 ( 31.7%)  'tt.func' Pipeline
+    0.0444 ( 31.5%)    Canonicalizer
+    0.0064 (  4.5%)  TritonRewriteTensorPointer
+    0.0126 (  8.9%)  Canonicalizer
+    0.0112 (  8.0%)  TritonCombineOps
+    0.0138 (  9.8%)  TritonReorderBroadcast
+    0.0107 (  7.6%)  CSE
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0075 (  5.3%)  SymbolDCE
+    0.0055 (  3.9%)  TritonLoopUnroll
+   -0.0430 (-30.5%)  Rest
+    0.1409 (100.0%)  Total
+===-------------------------------------------------------------------------===
+                         ... Execution time report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 11.4688 seconds
+
+  ----Wall Time----  ----Name----
+    0.0300 (  0.3%)  ConvertTritonToTritonGPU
+   11.1317 ( 97.1%)  TritonGPUCoalesce
+    0.0075 (  0.1%)  TritonGPUF32DotTC
+    0.0045 (  0.0%)  TritonGPUPlanCTAPass
+    0.0393 (  0.3%)  TritonGPURemoveLayoutConversions
+    0.0055 (  0.0%)  TritonGPUOptimizeThreadLocality
+    0.0058 (  0.1%)  TritonGPUAccelerateMatmul
+    0.0220 (  0.2%)  TritonGPURemoveLayoutConversions
+    0.0124 (  0.1%)  TritonGPUOptimizeDotOperands
+    0.0126 (  0.1%)  'any' Pipeline
+    0.0126 (  0.1%)    Canonicalizer
+    0.0040 (  0.0%)  TritonNvidiaGPUOptimizeDescriptorEncodingPass
+    0.0107 (  0.1%)  TritonLoopAwareCSE
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0039 (  0.0%)  TritonGPUFuseNestedLoops
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0069 (  0.1%)  Canonicalizer
+    0.0038 (  0.0%)  TritonLoopInvariantCodeMotion
+    0.0068 (  0.1%)  Canonicalizer
+    0.0039 (  0.0%)  TritonGPUCombineTensorSelectAndIf
+    0.0036 (  0.0%)  NVGPUWarpSpecialization
+    0.0038 (  0.0%)  TritonGPUAssignLatencies
+    0.0037 (  0.0%)  TritonGPUScheduleLoops
+    0.0218 (  0.2%)  TritonGPUPipeline
+    0.0067 (  0.1%)  Canonicalizer
+    0.0119 (  0.1%)  TritonLoopAwareCSE
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0056 (  0.0%)  TritonGPUPrefetch
+    0.0117 (  0.1%)  TritonGPUOptimizeDotOperands
+    0.0136 (  0.1%)  TritonGPUCoalesceAsyncCopy
+    0.0058 (  0.1%)  TritonNvidiaGPUOptimizeTMemLayoutsPass
+    0.0056 (  0.0%)  TritonNvidiaGPUTMALoweringPass
+    0.0215 (  0.2%)  TritonGPURemoveLayoutConversions
+    0.0034 (  0.0%)  TritonNvidiaGPUInterleaveTMemPass
+    0.0034 (  0.0%)  TritonGPUReduceDataDuplication
+    0.0036 (  0.0%)  TritonGPUReorderInstructions
+    0.0101 (  0.1%)  TritonLoopAwareCSE
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0046 (  0.0%)  SymbolDCE
+    0.0035 (  0.0%)  TritonGPUFenceInsertion
+    0.0057 (  0.0%)  TritonNvidiaGPUMMALoweringPass
+    0.0088 (  0.1%)  SCCP
+    0.0022 (  0.0%)  CSE
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0065 (  0.1%)  Canonicalizer
+   -0.0097 ( -0.1%)  Rest
+   11.4688 (100.0%)  Total
+===-------------------------------------------------------------------------===
+                         ... Execution time report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.4153 seconds
+
+  ----Wall Time----  ----Name----
+    0.0039 (  0.9%)  TritonGPUCombineTensorSelectAndIf
+    0.0039 (  0.9%)  TritonGPUAllocateWarpGroups
+    0.0040 (  1.0%)  SCFToControlFlowPass
+    0.0155 (  3.7%)  GluonInline
+    0.0112 (  2.7%)  AllocateSharedMemoryNv
+    0.0049 (  1.2%)  TritonTensorMemoryAllocationPass
+    0.0037 (  0.9%)  TritonNvidiaGPUCheckMatmulTwoCTAPass
+    0.0037 (  0.9%)  TritonGPUGlobalScratchAllocationPass
+    0.0116 (  2.8%)  TritonGPUProxyFenceInsertion
+    0.0581 ( 14.0%)  ConvertTritonGPUToLLVM
+    0.0207 (  5.0%)  Canonicalizer
+    0.0057 (  1.4%)  CSE
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0072 (  1.7%)  ConvertNVGPUToLLVM
+    0.0043 (  1.0%)  ConvertWarpSpecializeToLLVM
+    0.0021 (  0.5%)  'any' Pipeline
+    0.0021 (  0.5%)    ReconcileUnrealizedCastsPass
+    0.0045 (  1.1%)  Canonicalizer
+    0.0057 (  1.4%)  CSE
+    0.0000 (  0.0%)    (A) DominanceInfo
+    0.0035 (  0.9%)  SymbolDCE
+    0.0025 (  0.6%)  ConvertNVVMToLLVMPass
+    0.0123 (  3.0%)  LLVMDIScope
+    0.2261 ( 54.4%)  Rest
+    0.4153 (100.0%)  Total

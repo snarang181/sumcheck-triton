@@ -1,0 +1,6 @@
+zk_complete_add_3 field=p255_bls12_381_scalar rounds=24 first_ms=261.988 median_ms=259.543 checksum=150367795532500
+Collecting data...
+Generating '/tmp/nsys-report-ebd0.qdstrm'
+[1/1] [0%                          ] zk_complete_add_3_bw256_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_complete_add_3_bw256_r24_specialized_cuda.nsys-rep[1/1] [========40%                 ] zk_complete_add_3_bw256_r24_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_complete_add_3_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_3_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_3_bw256_r24_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_complete_add_3_bw256_r24_specialized_cuda.nsys-rep

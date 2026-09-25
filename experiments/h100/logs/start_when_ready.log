@@ -1,0 +1,6 @@
+2026-09-24T17:38:26Z waiting for compile jobs
+2026-09-25T00:30:43Z compile jobs finished; post-warm validation
+slack api ok
+2026-09-25T00:31:04Z post-warm validation done; non-matching rows: 0
+2026-09-25T00:31:04Z starting sweep
+2026-09-25T04:45:46Z sweep exited rc=0

@@ -1,0 +1,2 @@
+zk_jellyfish_permcheck_hp field=p32_2^32_minus_5             rounds=28 first_ms=406.112 median_ms=366.129 checksum=5582807891271
+experiments/a100/followups/diag/raw/r28_fixed/zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.csv

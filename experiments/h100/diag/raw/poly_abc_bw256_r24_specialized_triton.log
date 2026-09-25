@@ -1,0 +1,2 @@
+poly_abc                 field=p255_bls12_381_scalar        rounds=24 first_ms=82.272 median_ms=26.170 checksum=82965085710312
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/poly_abc_bw256_r24_specialized_triton.csv

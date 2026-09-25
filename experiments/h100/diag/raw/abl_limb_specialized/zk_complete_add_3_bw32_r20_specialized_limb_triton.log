@@ -1,0 +1,2 @@
+zk_complete_add_3        field=p32_2^32_minus_5             rounds=20 first_ms=228.304 median_ms=16.495 checksum=3866217322591
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_specialized/zk_complete_add_3_bw32_r20_specialized_limb_triton.csv

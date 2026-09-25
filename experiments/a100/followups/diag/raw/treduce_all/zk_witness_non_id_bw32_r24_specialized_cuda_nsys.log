@@ -1,0 +1,6 @@
+zk_witness_non_id field=p32_2^32_minus_5 rounds=24 first_ms=6.26886 median_ms=6.13254 checksum=3593444755342
+Collecting data...
+Generating '/tmp/nsys-report-8871.qdstrm'
+[1/1] [0%                          ] zk_witness_non_id_bw32_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_witness_non_id_bw32_r24_specialized_cuda.nsys-rep[1/1] [============55%             ] zk_witness_non_id_bw32_r24_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_witness_non_id_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_witness_non_id_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_witness_non_id_bw32_r24_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/treduce_all/zk_witness_non_id_bw32_r24_specialized_cuda.nsys-rep

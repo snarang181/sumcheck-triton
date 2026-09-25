@@ -1,0 +1,2 @@
+zk_complete_add_10       field=p255_bls12_381_scalar        rounds=20 first_ms=86.737 median_ms=13.368 checksum=86072749519367
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/treduce_all/zk_complete_add_10_bw256_r20_specialized_triton.csv

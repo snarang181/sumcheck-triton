@@ -1,0 +1,2 @@
+python -u benchmarks/field_sweep/resilient_compare_triton_cuda.py --zk-only --bit-widths 32 64 128 256 --rounds 14 16 18 20 22 24 26 28 --warmups 2 --repeats 10 --point-mode specialized --per-case-timeout 1800 --skip-build --cuda-binary build/field_sumcheck_cuda --python /home/ubuntu/venvs/zkduel-table5/bin/python --tmp-dir experiments/h100/sweep/cases --out experiments/h100/sweep/triton_cuda_field_resilient_r14_28_h100.csv 
+TRITON_CACHE_DIR=/home/ubuntu/sumcheck-triton/.triton-cache-h100-table5

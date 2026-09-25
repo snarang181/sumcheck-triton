@@ -1,0 +1,6 @@
+zk_vanilla_zerocheck_hp field=p32_2^32_minus_5 rounds=20 first_ms=3.6289 median_ms=3.54096 checksum=2781495850887
+Collecting data...
+Generating '/tmp/nsys-report-033e.qdstrm'
+[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_vanilla_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_vanilla_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep

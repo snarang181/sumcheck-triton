@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_complete_add_2 --rounds 16 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_complete_add_2_bw128_r16_triton.csv
+zk_complete_add_2        field=p128_mersenne_2^127_minus_1  rounds=16 first_ms=84.712 median_ms=8.850 checksum=21131633611062
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_complete_add_2_bw128_r16_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_complete_add_2 --rounds 16 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_complete_add_2_bw128_r16_cuda.csv
+zk_complete_add_2 field=p128_mersenne_2^127_minus_1 rounds=16 first_ms=4.23193 median_ms=3.21886 checksum=21131633611062
+zk_complete_add_2        field=p128_mersenne_2^127_minus_1  rounds=16 triton_ms=8.850 cuda_ms=3.21886 checksum_match=true speedup=2.749421
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_complete_add_2_bw128_r16_joined.csv

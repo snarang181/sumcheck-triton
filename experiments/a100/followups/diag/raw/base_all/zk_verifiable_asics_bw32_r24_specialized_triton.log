@@ -1,0 +1,2 @@
+zk_verifiable_asics      field=p32_2^32_minus_5             rounds=24 first_ms=52.885 median_ms=16.048 checksum=2375914940126
+experiments/a100/followups/diag/raw/base_all/zk_verifiable_asics_bw32_r24_specialized_triton.csv

@@ -1,0 +1,7 @@
+zk_complete_add_4        field=p32_2^32_minus_5             rounds=20 first_ms=64.205 median_ms=18.774 checksum=4167880773979
+experiments/a100/followups/diag/raw/base_all/zk_complete_add_4_bw32_r20_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-5093.qdstrm'
+[1/1] [0%                          ] zk_complete_add_4_bw32_r20_specialized_triton.nsys-rep[1/1] [0%                          ] zk_complete_add_4_bw32_r20_specialized_triton.nsys-rep[1/1] [===========50%              ] zk_complete_add_4_bw32_r20_specialized_triton.nsys-rep[1/1] [==================77%       ] zk_complete_add_4_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_complete_add_4_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_complete_add_4_bw32_r20_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_complete_add_4_bw32_r20_specialized_triton.nsys-rep

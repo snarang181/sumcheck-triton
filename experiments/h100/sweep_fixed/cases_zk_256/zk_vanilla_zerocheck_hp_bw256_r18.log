@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_vanilla_zerocheck_hp --rounds 18 --bit-widths 256 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_256/zk_vanilla_zerocheck_hp_bw256_r18_triton.csv
+zk_vanilla_zerocheck_hp  field=p255_bls12_381_scalar        rounds=18 first_ms=95.698 median_ms=10.531 checksum=75750258704952
+CAMERA-READY/h100/sweep_fixed/cases_zk_256/zk_vanilla_zerocheck_hp_bw256_r18_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_vanilla_zerocheck_hp --rounds 18 --bit-widths 256 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_256/zk_vanilla_zerocheck_hp_bw256_r18_cuda.csv
+zk_vanilla_zerocheck_hp field=p255_bls12_381_scalar rounds=18 first_ms=7.22087 median_ms=5.91932 checksum=75750258704952
+zk_vanilla_zerocheck_hp  field=p255_bls12_381_scalar        rounds=18 triton_ms=10.531 cuda_ms=5.91932 checksum_match=true speedup=1.779089
+CAMERA-READY/h100/sweep_fixed/cases_zk_256/zk_vanilla_zerocheck_hp_bw256_r18_joined.csv

@@ -1,0 +1,6 @@
+zk_opencheck field=p32_2^32_minus_5 rounds=20 first_ms=2.2239 median_ms=2.09846 checksum=1745741771670
+Collecting data...
+Generating '/tmp/nsys-report-b09b.qdstrm'
+[1/1] [0%                          ] zk_opencheck_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_opencheck_bw32_r20_specialized_cuda.nsys-rep[1/1] [7%                          ] zk_opencheck_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_opencheck_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_opencheck_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_opencheck_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/treduce_all/zk_opencheck_bw32_r20_specialized_cuda.nsys-rep

@@ -1,0 +1,7 @@
+zk_opencheck             field=p32_2^32_minus_5             rounds=20 first_ms=45.693 median_ms=8.510 checksum=1745741771670
+experiments/a100/followups/diag/raw/base_all/zk_opencheck_bw32_r20_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-27fb.qdstrm'
+[1/1] [0%                          ] zk_opencheck_bw32_r20_specialized_triton.nsys-rep[1/1] [0%                          ] zk_opencheck_bw32_r20_specialized_triton.nsys-rep[1/1] [6%                          ] zk_opencheck_bw32_r20_specialized_triton.nsys-rep[1/1] [==================78%       ] zk_opencheck_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_opencheck_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_opencheck_bw32_r20_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_opencheck_bw32_r20_specialized_triton.nsys-rep

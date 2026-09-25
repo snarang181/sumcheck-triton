@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_complete_add_5 field=p255_bls12_381_scalar rounds=20 first_ms=31.6409 median_ms=26.6663 checksum=123320185658891
+Collecting data...
+Generating '/tmp/nsys-report-8557.qdstrm'
+[1/1] [0%                          ] zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep[1/1] [0%                          ] zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep[1/1] [6%                          ] zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep[1/1] [==============64%           ] zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep[1/1] [==================76%       ] zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_fixed_all/zk_complete_add_5_bw256_r20_specialized_element_cuda.nsys-rep

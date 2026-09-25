@@ -1,0 +1,2 @@
+zk_spartan_2             field=p255_bls12_381_scalar        rounds=24 first_ms=74.618 median_ms=20.888 checksum=62247910145291
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_generic/zk_spartan_2_bw256_r24_generic_limb_triton.csv

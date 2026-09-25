@@ -1,0 +1,7 @@
+occupancy W=29 L=1 mode=1 idx=0 block=128 smem=56000 blocks_per_sm=4
+occupancy W=29 L=1 mode=1 idx=1 block=128 smem=56000 blocks_per_sm=4
+occupancy W=29 L=1 mode=1 idx=2 block=128 smem=56000 blocks_per_sm=4
+occupancy W=29 L=1 mode=1 idx=3 block=128 smem=56000 blocks_per_sm=4
+occupancy W=29 L=1 mode=1 idx=4 block=128 smem=56000 blocks_per_sm=4
+occupancy W=29 L=1 mode=1 idx=5 block=128 smem=56000 blocks_per_sm=4
+zk_vanilla_permcheck_hp field=p32_2^32_minus_5 rounds=24 first_ms=11.7467 median_ms=11.3236 checksum=4304122550195

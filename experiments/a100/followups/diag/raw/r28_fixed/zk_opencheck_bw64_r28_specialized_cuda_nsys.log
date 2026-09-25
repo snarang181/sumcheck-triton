@@ -1,0 +1,6 @@
+zk_opencheck field=p64_goldilocks rounds=28 first_ms=141.293 median_ms=141.269 checksum=6926411686259
+Collecting data...
+Generating '/tmp/nsys-report-a411.qdstrm'
+[1/1] [0%                          ] zk_opencheck_bw64_r28_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_opencheck_bw64_r28_specialized_cuda.nsys-rep[1/1] [==============62%           ] zk_opencheck_bw64_r28_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_opencheck_bw64_r28_specialized_cuda.nsys-rep[1/1] [========================100%] zk_opencheck_bw64_r28_specialized_cuda.nsys-rep[1/1] [========================100%] zk_opencheck_bw64_r28_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/r28_fixed/zk_opencheck_bw64_r28_specialized_cuda.nsys-rep

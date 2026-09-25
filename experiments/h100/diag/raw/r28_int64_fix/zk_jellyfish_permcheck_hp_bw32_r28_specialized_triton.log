@@ -1,0 +1,2 @@
+zk_jellyfish_permcheck_hp field=p32_2^32_minus_5             rounds=28 first_ms=452.124 median_ms=288.015 checksum=5582807891271
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.csv

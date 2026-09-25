@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u experiments/h100/tools/triton_sweep_treduce.py --workloads zk_vanilla_permcheck_hp --rounds 26 --bit-widths 256 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep_treduce/cases/zk_vanilla_permcheck_hp_bw256_r26_triton.csv
+zk_vanilla_permcheck_hp  field=p255_bls12_381_scalar        rounds=26 first_ms=691.756 median_ms=591.554 checksum=133583605644853
+experiments/h100/sweep_treduce/cases/zk_vanilla_permcheck_hp_bw256_r26_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_vanilla_permcheck_hp --rounds 26 --bit-widths 256 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep_treduce/cases/zk_vanilla_permcheck_hp_bw256_r26_cuda.csv
+zk_vanilla_permcheck_hp field=p255_bls12_381_scalar rounds=26 first_ms=564.81 median_ms=562.353 checksum=133583605644853
+zk_vanilla_permcheck_hp  field=p255_bls12_381_scalar        rounds=26 triton_ms=591.554 cuda_ms=562.353 checksum_match=true speedup=1.051926
+experiments/h100/sweep_treduce/cases/zk_vanilla_permcheck_hp_bw256_r26_joined.csv

@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_vanilla_permcheck_hp field=p255_bls12_381_scalar rounds=24 first_ms=143.776 median_ms=142.34 checksum=125514718366453
+Collecting data...
+Generating '/tmp/nsys-report-adba.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r24_specialized_limb_cuda.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r24_specialized_limb_cuda.nsys-rep[1/1] [==========48%               ] zk_vanilla_permcheck_hp_bw256_r24_specialized_limb_cuda.nsys-rep[1/1] [==================76%       ] zk_vanilla_permcheck_hp_bw256_r24_specialized_limb_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r24_specialized_limb_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r24_specialized_limb_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_specialized/zk_vanilla_permcheck_hp_bw256_r24_specialized_limb_cuda.nsys-rep

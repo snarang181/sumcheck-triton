@@ -1,0 +1,2 @@
+zk_complete_add_3        field=p255_bls12_381_scalar        rounds=24 first_ms=241.215 median_ms=165.413 checksum=150367795532500
+experiments/a100/followups/diag/raw/base_all/zk_complete_add_3_bw256_r24_specialized_triton.csv

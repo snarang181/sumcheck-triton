@@ -1,0 +1,2 @@
+zk_witness_non_id        field=p32_2^32_minus_5             rounds=20 first_ms=125.290 median_ms=10.511 checksum=2669918320433
+experiments/a100/followups/diag/raw/base_all/zk_witness_non_id_bw32_r20_specialized_triton.csv

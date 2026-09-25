@@ -1,0 +1,2 @@
+zk_complete_add_3        field=p64_goldilocks               rounds=16 first_ms=303.003 median_ms=10.028 checksum=9691694050584
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/small64_base/zk_complete_add_3_bw64_r16_specialized_triton.csv

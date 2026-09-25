@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_spartan_2             field=p32_2^32_minus_5             rounds=14 first_ms=53.872 median_ms=4.452 checksum=1111993635675
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/zk_spartan_2_bw32_r14_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-9003.qdstrm'
+[1/1] [0%                          ] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [0%                          ] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [============55%             ] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [================68%         ] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [===================81%      ] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [===================82%      ] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [====================83%     ] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [========================100%] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep[1/1] [========================100%] zk_spartan_2_bw32_r14_specialized_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/zk_spartan_2_bw32_r14_specialized_triton.nsys-rep

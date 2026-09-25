@@ -1,0 +1,2 @@
+zk_vanilla_zerocheck_hp  field=p255_bls12_381_scalar        rounds=24 first_ms=182.785 median_ms=104.675 checksum=106449597796035
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/treduce_all/zk_vanilla_zerocheck_hp_bw256_r24_specialized_triton.csv

@@ -1,0 +1,2 @@
+zk_spartan_2             field=p64_goldilocks               rounds=16 first_ms=279.273 median_ms=4.581 checksum=3821433327062
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/small64_base/zk_spartan_2_bw64_r16_specialized_triton.csv

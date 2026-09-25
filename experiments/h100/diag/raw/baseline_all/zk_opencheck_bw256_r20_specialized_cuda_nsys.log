@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_opencheck field=p255_bls12_381_scalar rounds=20 first_ms=5.83619 median_ms=5.31936 checksum=53045358594397
+Collecting data...
+Generating '/tmp/nsys-report-7994.qdstrm'
+[1/1] [0%                          ] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep[1/1] [===============65%          ] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep[1/1] [================71%         ] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep[1/1] [==================77%       ] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep[1/1] [==================78%       ] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_opencheck_bw256_r20_specialized_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_opencheck_bw256_r20_specialized_cuda.nsys-rep

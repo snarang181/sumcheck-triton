@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_opencheck             field=p64_goldilocks               rounds=28 first_ms=186.433 median_ms=141.927 checksum=6926411686259
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_opencheck_bw64_r28_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-2e09.qdstrm'
+[1/1] [0%                          ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [0%                          ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [5%                          ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [6%                          ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [============57%             ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [==================77%       ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_opencheck_bw64_r28_specialized_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_opencheck_bw64_r28_specialized_triton.nsys-rep

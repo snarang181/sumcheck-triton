@@ -1,0 +1,7 @@
+zk_spartan_2             field=p255_bls12_381_scalar        rounds=20 first_ms=47.418 median_ms=8.490 checksum=52403202760155
+experiments/a100/followups/diag/raw/base_all/zk_spartan_2_bw256_r20_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-b167.qdstrm'
+[1/1] [0%                          ] zk_spartan_2_bw256_r20_specialized_triton.nsys-rep[1/1] [0%                          ] zk_spartan_2_bw256_r20_specialized_triton.nsys-rep[1/1] [6%                          ] zk_spartan_2_bw256_r20_specialized_triton.nsys-rep[1/1] [==================78%       ] zk_spartan_2_bw256_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_spartan_2_bw256_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_spartan_2_bw256_r20_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_spartan_2_bw256_r20_specialized_triton.nsys-rep

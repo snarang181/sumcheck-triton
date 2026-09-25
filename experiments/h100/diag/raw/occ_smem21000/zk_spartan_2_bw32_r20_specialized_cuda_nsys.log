@@ -1,0 +1,13 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+occupancy W=10 L=1 mode=1 idx=0 block=128 smem=21000 blocks_per_sm=10
+occupancy W=10 L=1 mode=1 idx=1 block=128 smem=21000 blocks_per_sm=10
+occupancy W=10 L=1 mode=1 idx=2 block=128 smem=21000 blocks_per_sm=10
+zk_spartan_2 field=p32_2^32_minus_5 rounds=20 first_ms=2.05142 median_ms=1.85635 checksum=1740042488314
+Collecting data...
+Generating '/tmp/nsys-report-0374.qdstrm'
+[1/1] [0%                          ] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep[1/1] [===============65%          ] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep[1/1] [================71%         ] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================77%       ] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================78%       ] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/occ_smem21000/zk_spartan_2_bw32_r20_specialized_cuda.nsys-rep

@@ -1,0 +1,17 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+occupancy W=20 L=1 mode=1 idx=0 block=128 smem=512 blocks_per_sm=16
+occupancy W=20 L=1 mode=1 idx=1 block=128 smem=512 blocks_per_sm=16
+occupancy W=20 L=1 mode=1 idx=2 block=128 smem=512 blocks_per_sm=16
+occupancy W=20 L=1 mode=1 idx=3 block=128 smem=512 blocks_per_sm=16
+occupancy W=20 L=1 mode=1 idx=4 block=128 smem=512 blocks_per_sm=16
+occupancy W=20 L=1 mode=1 idx=5 block=128 smem=512 blocks_per_sm=16
+occupancy W=20 L=1 mode=1 idx=6 block=128 smem=512 blocks_per_sm=16
+zk_complete_add_3 field=p32_2^32_minus_5 rounds=24 first_ms=10.6455 median_ms=10.3228 checksum=4496078752126
+Collecting data...
+Generating '/tmp/nsys-report-7a23.qdstrm'
+[1/1] [0%                          ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [5%                          ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [6%                          ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [7%                          ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [8%                          ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [=========44%                ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/occ_smem0/zk_complete_add_3_bw32_r24_specialized_cuda.nsys-rep

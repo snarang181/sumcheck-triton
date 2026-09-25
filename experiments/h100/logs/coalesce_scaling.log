@@ -1,0 +1,8 @@
+{"sweep": "M", "M": 16, "C": 2000, "triton": "3.7.0", "ttir_ops": 6117, "mem_ops": 17, "coalesce_s": 33.0753, "coalesce_share": 99.0}
+{"sweep": "M", "M": 32, "C": 2000, "triton": "3.7.0", "ttir_ops": 6213, "mem_ops": 33, "coalesce_s": 63.5149, "coalesce_share": 99.5}
+{"sweep": "M", "M": 64, "C": 2000, "triton": "3.7.0", "ttir_ops": 6405, "mem_ops": 65, "coalesce_s": 139.8047, "coalesce_share": 99.8}
+{"sweep": "M", "M": 128, "C": 2000, "triton": "3.7.0", "ttir_ops": 6789, "mem_ops": 129, "coalesce_s": 274.3677, "coalesce_share": 99.9}
+{"sweep": "C", "M": 32, "C": 1000, "triton": "3.7.0", "ttir_ops": 3213, "mem_ops": 33, "coalesce_s": 11.5053, "coalesce_share": 98.6}
+{"sweep": "C", "M": 32, "C": 2000, "triton": "3.7.0", "ttir_ops": 6213, "mem_ops": 33, "coalesce_s": 57.0163, "coalesce_share": 99.5}
+{"sweep": "C", "M": 32, "C": 4000, "triton": "3.7.0", "ttir_ops": 12213, "mem_ops": 33, "coalesce_s": 259.2634, "coalesce_share": 99.7}
+{"sweep": "C", "M": 32, "C": 8000, "triton": "3.7.0", "ttir_ops": 24213, "mem_ops": 33, "coalesce_s": 1110.4229, "coalesce_share": 99.9}

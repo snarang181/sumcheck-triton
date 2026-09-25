@@ -1,0 +1,58 @@
+==PROF== Connected to process 654401 (/home/ubuntu/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/bin/python3.12)
+zk_vanilla_permcheck_hp  field=p255_bls12_381_scalar        rounds=20 first_ms=5671.725 median_ms=30.255 checksum=16212304156872
+/tmp/zkduel-ncu-t.csv
+==PROF== Disconnected from process 654401
+"ID","Process ID","Process Name","Host Name","Kernel Name","Context","Stream","Block Size","Grid Size","Device","CC","Section Name","Metric Name","Metric Unit","Metric Value","Rule Name","Rule Type","Rule Description","Estimated Speedup Type","Estimated Speedup"
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","DRAM Frequency","hz","1592923725.15",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","SM Frequency","hz","1109959060.52",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","Elapsed Cycles","cycle","1230763",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","Memory Throughput","%","36.34",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","DRAM Throughput","%","16.49",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","Duration","ns","1108832",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","L1/TEX Cache Throughput","%","36.41",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","L2 Cache Throughput","%","16.28",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","SM Active Cycles","cycle","1228216.66",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","GPU Speed Of Light Throughput","Compute (SM) Throughput","%","41.47",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","SpeedOfLight","","","","SOLBottleneck","OPT","This workload exhibits low compute throughput and memory bandwidth utilization relative to the peak performance of this device. Achieved compute throughput and/or memory bandwidth below 60.0% of peak typically indicate latency issues. Look at Scheduler Statistics and Warp State Statistics for potential reasons.","",""
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Warp State Statistics","Warp Cycles Per Issued Instruction","cycle","8.72",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Warp State Statistics","Warp Cycles Per Executed Instruction","cycle","8.72",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Warp State Statistics","Avg. Active Threads Per Warp","","31.99",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Warp State Statistics","Avg. Not Predicated Off Threads Per Warp","","31.62",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","WarpStateStats","","","","CPIStall","WRN","The optional metric smsp__pcsamp_sample_count could not be found. Collecting it as an additional metric could enable the rule to provide more guidance.","",""
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","WarpStateStats","","","","CPIStall","OPT","On average, each warp of this workload spends 2.6 cycles being stalled waiting to be selected to fetch an instruction or waiting on an instruction cache miss. A high number of warps not having an instruction fetched is typical for very short kernels with less than one full wave of work in the grid. Excessively jumping across large blocks of assembly code can also lead to more warps stalled for this reason, if this causes misses in the instruction cache. See also the related Branch Resolving state. This stall type represents about 30.2% of the total average of 8.7 cycles between issuing two instructions.","local","30.18"
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","WarpStateStats","","","","CPIStall","INF","Check the Warp Stall Sampling (All Samples) table for the top stall locations in your source based on sampling data. The Kernel Profiling Guide (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-reference) provides more details on each stall reason.","",""
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Instruction Statistics","Avg. Executed Instructions Per Scheduler","inst","417199.16",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Instruction Statistics","Executed Instructions","inst","190242816",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Instruction Statistics","Avg. Issued Instructions Per Scheduler","inst","417214.16",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Instruction Statistics","Issued Instructions","inst","190249656",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Block Size","","128",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Cluster Scheduling Policy","","PolicySpread",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Cluster Size","","0",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Function Cache Configuration","","CachePreferNone",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Grid Size","","4096",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Registers Per Thread","register/thread","160",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Shared Memory Configuration Size","byte","16384",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Driver Shared Memory Per Block","byte/block","1024",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Dynamic Shared Memory Per Block","byte/block","1024",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Static Shared Memory Per Block","byte/block","0",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","# SMs","SM","114",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Stack Size","","1024",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Threads","thread","524288",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","# TPCs","","57",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Enabled TPC IDs","","all",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Uses Green Context","","0",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Launch Statistics","Waves Per SM","","11.98",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Max Active Clusters","cluster","0",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Max Cluster Size","block","8",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Overall GPU Occupancy","%","0",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Cluster Occupancy","%","0",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Block Limit Barriers","block","32",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Block Limit SM","block","32",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Block Limit Registers","block","3",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Block Limit Shared Mem","block","8",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Block Limit Warps","block","16",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Theoretical Active Warps per SM","warp","12",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Theoretical Occupancy","%","18.75",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Achieved Occupancy","%","18.69",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","Achieved Active Warps Per SM","warp","11.96",
+"0","654401","python3.12","127.0.0.1","_round_eval_specialized_kernel","1","7","(128, 1, 1)","(4096, 1, 1)","0","9.0","Occupancy","","","","TheoreticalOccupancy","OPT","The 3.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the hardware maximum of 16. This kernel's theoretical occupancy (18.8%) is limited by the number of required registers.","local","81.25"

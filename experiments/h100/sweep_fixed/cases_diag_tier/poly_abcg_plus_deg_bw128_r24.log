@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads poly_abcg_plus_deg --rounds 24 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_abcg_plus_deg_bw128_r24_triton.csv
+poly_abcg_plus_deg       field=p128_mersenne_2^127_minus_1  rounds=24 first_ms=86.962 median_ms=28.649 checksum=25575608459154
+CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_abcg_plus_deg_bw128_r24_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads poly_abcg_plus_deg --rounds 24 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_abcg_plus_deg_bw128_r24_cuda.csv
+poly_abcg_plus_deg field=p128_mersenne_2^127_minus_1 rounds=24 first_ms=15.9711 median_ms=15.6218 checksum=25575608459154
+poly_abcg_plus_deg       field=p128_mersenne_2^127_minus_1  rounds=24 triton_ms=28.649 cuda_ms=15.6218 checksum_match=true speedup=1.833912
+CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_abcg_plus_deg_bw128_r24_joined.csv

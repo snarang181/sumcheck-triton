@@ -1,0 +1,6 @@
+zk_complete_add_2 field=p32_2^32_minus_5 rounds=24 first_ms=10.0607 median_ms=9.8753 checksum=3889061788664
+Collecting data...
+Generating '/tmp/nsys-report-e796.qdstrm'
+[1/1] [0%                          ] zk_complete_add_2_bw32_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_complete_add_2_bw32_r24_specialized_cuda.nsys-rep[1/1] [=========46%                ] zk_complete_add_2_bw32_r24_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_complete_add_2_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_2_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_2_bw32_r24_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_complete_add_2_bw32_r24_specialized_cuda.nsys-rep

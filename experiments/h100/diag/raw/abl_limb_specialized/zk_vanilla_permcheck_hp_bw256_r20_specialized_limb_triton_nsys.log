@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_vanilla_permcheck_hp  field=p255_bls12_381_scalar        rounds=20 first_ms=129.729 median_ms=24.854 checksum=105379977019668
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_specialized/zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-c604.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep[1/1] [5%                          ] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep[1/1] [6%                          ] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep[1/1] [=============60%            ] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep[1/1] [==================78%       ] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_specialized/zk_vanilla_permcheck_hp_bw256_r20_specialized_limb_triton.nsys-rep

@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_witness_id_point_1 field=p32_2^32_minus_5 rounds=24 first_ms=7.38064 median_ms=7.04422 checksum=3720441350990
+Collecting data...
+Generating '/tmp/nsys-report-878c.qdstrm'
+[1/1] [0%                          ] zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [0%                          ] zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [5%                          ] zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [===========53%              ] zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [==================76%       ] zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/cudablock_256/zk_witness_id_point_1_bw32_r24_specialized_element_cuda.nsys-rep

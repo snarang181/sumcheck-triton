@@ -1,0 +1,18 @@
+2026-09-24T21:11:20Z waiting for the sweep to finish
+2026-09-25T04:48:25Z pushed 0a676b8
+slack api ok
+2026-09-25T04:48:25Z step 1: r=28 cases with more than 2^31 table elements, int64-offset fix
+2026-09-25T04:52:16Z pushed 6949512
+slack api ok
+2026-09-25T04:52:16Z step 2: wall vs GPU-kernel time, all 25 workloads, 32/256-bit, r=20/24
+2026-09-25T05:25:30Z pushed 0c56ebb
+slack api ok
+2026-09-25T05:25:30Z step 3: finish tl.reduce precompile; meanwhile the CUDA occupancy ablation (GPU-time metric)
+2026-09-25T05:38:52Z pushed e47e8cd
+slack api ok
+2026-09-25T05:38:54Z pushed 12b2122
+slack api ok
+2026-09-25T05:38:54Z step 4: tl.reduce ablation, all 25 workloads, 32/256-bit, r=20/24
+2026-09-25T06:12:34Z pushed 757ca5d
+slack api ok
+2026-09-25T06:12:35Z all follow-ups done

@@ -1,0 +1,2 @@
+built build/field_sumcheck_cuda_int64_r28 (workloads: 28 29 30 31 32; patches: experiments/h100/patches/cuda_int64_index.patch)
+seconds=1194

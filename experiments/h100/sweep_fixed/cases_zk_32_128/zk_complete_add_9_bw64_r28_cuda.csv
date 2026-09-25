@@ -1,0 +1,2 @@
+workload,polynomial,backend,field,arithmetic,layout,point_mode,bit_width,limbs,modulus_hex,rounds,N,vars,degree,terms,warmups,repeats,timing_mode,challenge_mode,first_ms,median_ms,eval_median_ms,challenge_median_ms,fold_median_ms,total_median_ms,input_mib,checksum,status
+zk_complete_add_9,"q*xr - q*xp - q*xq*xr*gamma + q*xp*xq*gamma",cuda-sumcheck-prime-field-montgomery-element-layout-specialized-points,p64_goldilocks,montgomery,element,specialized,64,2,0xffffffff00000001,28,268435456,5,4,4,2,10,whole-run,fixed,83.4645,84.7299,0,0,0,84.7299,10240.000000,11417964607582,ok

@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_jellyfish_permcheck_hp field=p255_bls12_381_scalar rounds=20 first_ms=38.5044 median_ms=35.0434 checksum=144017082122277
+Collecting data...
+Generating '/tmp/nsys-report-9888.qdstrm'
+[1/1] [0%                          ] zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [5%                          ] zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [============56%             ] zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_jellyfish_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep

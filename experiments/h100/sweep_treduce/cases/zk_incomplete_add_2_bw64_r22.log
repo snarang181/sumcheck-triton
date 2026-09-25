@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u experiments/h100/tools/triton_sweep_treduce.py --workloads zk_incomplete_add_2 --rounds 22 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep_treduce/cases/zk_incomplete_add_2_bw64_r22_triton.csv
+zk_incomplete_add_2      field=p64_goldilocks               rounds=22 first_ms=66.691 median_ms=13.098 checksum=7402501928497
+experiments/h100/sweep_treduce/cases/zk_incomplete_add_2_bw64_r22_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_incomplete_add_2 --rounds 22 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep_treduce/cases/zk_incomplete_add_2_bw64_r22_cuda.csv
+zk_incomplete_add_2 field=p64_goldilocks rounds=22 first_ms=4.49283 median_ms=4.2959 checksum=7402501928497
+zk_incomplete_add_2      field=p64_goldilocks               rounds=22 triton_ms=13.098 cuda_ms=4.2959 checksum_match=true speedup=3.048954
+experiments/h100/sweep_treduce/cases/zk_incomplete_add_2_bw64_r22_joined.csv

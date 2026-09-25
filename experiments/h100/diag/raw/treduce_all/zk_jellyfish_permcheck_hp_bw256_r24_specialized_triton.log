@@ -1,0 +1,2 @@
+zk_jellyfish_permcheck_hp field=p255_bls12_381_scalar        rounds=24 first_ms=543.611 median_ms=389.621 checksum=166766272294648
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/treduce_all/zk_jellyfish_permcheck_hp_bw256_r24_specialized_triton.csv

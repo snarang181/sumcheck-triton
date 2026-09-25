@@ -1,0 +1,6 @@
+zk_spartan_2 field=p255_bls12_381_scalar rounds=20 first_ms=3.0608 median_ms=2.91904 checksum=52403202760155
+Collecting data...
+Generating '/tmp/nsys-report-28cd.qdstrm'
+[1/1] [0%                          ] zk_spartan_2_bw256_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_spartan_2_bw256_r20_specialized_cuda.nsys-rep[1/1] [7%                          ] zk_spartan_2_bw256_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_spartan_2_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw256_r20_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/treduce_all/zk_spartan_2_bw256_r20_specialized_cuda.nsys-rep

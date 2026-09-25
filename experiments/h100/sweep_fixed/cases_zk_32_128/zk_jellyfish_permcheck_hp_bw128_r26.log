@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_jellyfish_permcheck_hp --rounds 26 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_permcheck_hp_bw128_r26_triton.csv
+zk_jellyfish_permcheck_hp field=p128_mersenne_2^127_minus_1  rounds=26 first_ms=402.442 median_ms=311.739 checksum=46033492769966
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_permcheck_hp_bw128_r26_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_jellyfish_permcheck_hp --rounds 26 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_permcheck_hp_bw128_r26_cuda.csv
+zk_jellyfish_permcheck_hp field=p128_mersenne_2^127_minus_1 rounds=26 first_ms=258.224 median_ms=247.493 checksum=46033492769966
+zk_jellyfish_permcheck_hp field=p128_mersenne_2^127_minus_1  rounds=26 triton_ms=311.739 cuda_ms=247.493 checksum_match=true speedup=1.259587
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_permcheck_hp_bw128_r26_joined.csv

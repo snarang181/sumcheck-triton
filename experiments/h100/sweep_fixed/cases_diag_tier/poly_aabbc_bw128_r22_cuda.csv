@@ -1,0 +1,2 @@
+workload,polynomial,backend,field,arithmetic,layout,point_mode,bit_width,limbs,modulus_hex,rounds,N,vars,degree,terms,warmups,repeats,timing_mode,challenge_mode,first_ms,median_ms,eval_median_ms,challenge_median_ms,fold_median_ms,total_median_ms,input_mib,checksum,status
+poly_aabbc,"a*a*b*b*c",cuda-sumcheck-prime-field-montgomery-element-layout-specialized-points,p128_mersenne_2^127_minus_1,montgomery,element,specialized,128,4,0x7fffffffffffffffffffffffffffffff,22,4194304,3,5,1,2,10,whole-run,fixed,6.59134,6.28369,0,0,0,6.28369,192.000000,30184414484523,ok

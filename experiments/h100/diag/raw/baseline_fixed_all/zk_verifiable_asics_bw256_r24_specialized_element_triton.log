@@ -1,0 +1,2 @@
+zk_verifiable_asics      field=p255_bls12_381_scalar        rounds=24 first_ms=104.420 median_ms=37.030 checksum=84370170378416
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_fixed_all/zk_verifiable_asics_bw256_r24_specialized_element_triton.csv

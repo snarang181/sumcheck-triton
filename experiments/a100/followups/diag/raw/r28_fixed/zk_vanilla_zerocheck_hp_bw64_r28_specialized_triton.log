@@ -1,0 +1,2 @@
+zk_vanilla_zerocheck_hp  field=p64_goldilocks               rounds=28 first_ms=459.872 median_ms=252.705 checksum=11502908106742
+experiments/a100/followups/diag/raw/r28_fixed/zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.csv

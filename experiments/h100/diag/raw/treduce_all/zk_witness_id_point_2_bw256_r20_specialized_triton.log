@@ -1,0 +1,2 @@
+zk_witness_id_point_2    field=p255_bls12_381_scalar        rounds=20 first_ms=54.769 median_ms=10.024 checksum=107171530653798
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/treduce_all/zk_witness_id_point_2_bw256_r20_specialized_triton.csv

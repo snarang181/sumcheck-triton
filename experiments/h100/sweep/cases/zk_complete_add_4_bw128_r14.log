@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_complete_add_4 --rounds 14 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep/cases/zk_complete_add_4_bw128_r14_triton.csv
+zk_complete_add_4        field=p128_mersenne_2^127_minus_1  rounds=14 first_ms=87.552 median_ms=7.548 checksum=21714589434746
+experiments/h100/sweep/cases/zk_complete_add_4_bw128_r14_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_complete_add_4 --rounds 14 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep/cases/zk_complete_add_4_bw128_r14_cuda.csv
+zk_complete_add_4 field=p128_mersenne_2^127_minus_1 rounds=14 first_ms=5.39267 median_ms=3.87773 checksum=21714589434746
+zk_complete_add_4        field=p128_mersenne_2^127_minus_1  rounds=14 triton_ms=7.548 cuda_ms=3.87773 checksum_match=true speedup=1.946500
+experiments/h100/sweep/cases/zk_complete_add_4_bw128_r14_joined.csv

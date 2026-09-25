@@ -1,0 +1,6 @@
+zk_vanilla_zerocheck_hp field=p64_goldilocks rounds=28 first_ms=170.75 median_ms=170.701 checksum=11502908106742
+Collecting data...
+Generating '/tmp/nsys-report-ff14.qdstrm'
+[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_cuda.nsys-rep[1/1] [=======38%                  ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw64_r28_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw64_r28_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/r28_fixed/zk_vanilla_zerocheck_hp_bw64_r28_specialized_cuda.nsys-rep

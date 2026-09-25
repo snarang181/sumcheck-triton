@@ -1,0 +1,2 @@
+workload,polynomial,backend,field,arithmetic,layout,point_mode,bit_width,limbs,modulus_hex,rounds,N,vars,degree,terms,warmups,repeats,timing_mode,challenge_mode,first_ms,median_ms,eval_median_ms,challenge_median_ms,fold_median_ms,total_median_ms,input_mib,checksum,status
+zk_spartan_2,ABC*Z,triton-sumcheck-prime-field-montgomery-element-layout-specialized-points-treduce,p128_mersenne_2^127_minus_1,montgomery,element,specialized,128,4,0x7fffffffffffffffffffffffffffffff,24,16777216,2,2,1,2,10,whole-run,fixed,61.922,12.140,0.000,0.000000,0.000,12.140,512.000000,9679948174702,ok

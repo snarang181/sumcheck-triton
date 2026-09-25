@@ -1,0 +1,6 @@
+zk_verifiable_asics field=p32_2^32_minus_5 rounds=20 first_ms=2.67178 median_ms=2.53488 checksum=2470931911396
+Collecting data...
+Generating '/tmp/nsys-report-3f1b.qdstrm'
+[1/1] [0%                          ] zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep[1/1] [5%                          ] zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep[1/1] [6%                          ] zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/treduce_all/zk_verifiable_asics_bw32_r20_specialized_cuda.nsys-rep

@@ -1,0 +1,25 @@
+2026-09-25T10:15:28Z phase 0: preflight
+2026-09-25T10:15:32Z no Triton cache at /home/ubuntu/sumcheck-triton/.triton-cache-sumcheck-field; kernels will be compiled
+2026-09-25T10:15:32Z building build/field_sumcheck_cuda from the current source (~1 h)
+2026-09-25T11:20:38Z ERROR: CUDA build failed (logs/cuda_build.log)
+2026-09-25T11:21:08Z phase 0: preflight
+2026-09-25T11:21:11Z no Triton cache at /home/ubuntu/sumcheck-triton/.triton-cache-sumcheck-field; kernels will be compiled
+2026-09-25T11:21:11Z building build/field_sumcheck_cuda from the current source (~1 h)
+2026-09-25T12:26:14Z pushed cc9f27b
+2026-09-25T12:26:14Z done
+2026-09-25T12:26:29Z phase 1: compile (CPU only): Triton kernels for both variants, occupancy binary
+2026-09-25T12:26:29Z   360 kernel compiles, 12 in parallel
+2026-09-25T13:39:11Z   compiles done: 360 ok, 0 failed; occupancy binary exit=0
+2026-09-25T13:39:13Z pushed 87a74ba
+2026-09-25T13:39:13Z phase 2: timing on a quiet GPU
+2026-09-25T13:39:13Z   base: 32-bit, all 25 workloads, r=20/24
+2026-09-25T13:48:15Z   base: 256-bit subset, r=20/24
+2026-09-25T13:50:19Z pushed a50d6d3
+2026-09-25T13:50:19Z   treduce: 32-bit, all 25 workloads, r=20/24
+2026-09-25T13:59:18Z   treduce: 256-bit subset, r=20/24
+2026-09-25T14:01:22Z pushed a9bf182
+2026-09-25T14:01:22Z   occupancy ablation (A100: 164 KB shared memory per SM)
+2026-09-25T14:07:24Z pushed 5015c42
+2026-09-25T14:07:24Z   r=28 cases with more than 2^31 table elements (int64-offset fix in triton_sweep.py)
+2026-09-25T14:10:07Z pushed 49cd4b6
+2026-09-25T14:10:07Z done

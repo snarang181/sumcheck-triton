@@ -1,0 +1,15 @@
+{"workload": "poly_ab", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 3, "challenge_mode": "fixed", "match": true, "seconds": 14.17}
+{"workload": "poly_ab", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "fixed", "match": true, "seconds": 0.01}
+{"workload": "poly_ab", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "sha3", "match": true, "seconds": 0.01}
+{"workload": "zk_verifiable_asics", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 3, "challenge_mode": "fixed", "match": true, "seconds": 28.89}
+{"workload": "zk_verifiable_asics", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "fixed", "match": true, "seconds": 0.02}
+{"workload": "zk_verifiable_asics", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "sha3", "match": true, "seconds": 0.02}
+{"workload": "zk_incomplete_add_1", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 3, "challenge_mode": "fixed", "match": true, "seconds": 405.17}
+{"workload": "zk_incomplete_add_1", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "fixed", "match": true, "seconds": 0.04}
+{"workload": "zk_incomplete_add_1", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "sha3", "match": true, "seconds": 0.06}
+{"workload": "zk_complete_add_5", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 3, "challenge_mode": "fixed", "match": true, "seconds": 3315.74}
+{"workload": "zk_complete_add_5", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "fixed", "match": true, "seconds": 0.04}
+{"workload": "zk_complete_add_5", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "sha3", "match": true, "seconds": 0.05}
+{"workload": "zk_complete_add_11", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 3, "challenge_mode": "fixed", "match": true, "seconds": 396.95}
+{"workload": "zk_complete_add_11", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "fixed", "match": true, "seconds": 0.02}
+{"workload": "zk_complete_add_11", "bit_width": 128, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "sha3", "match": true, "seconds": 0.02}

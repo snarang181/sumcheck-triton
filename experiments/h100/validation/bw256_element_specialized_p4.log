@@ -1,0 +1,3 @@
+{"workload": "poly_aabbc", "bit_width": 256, "layout": "element", "point_mode": "specialized", "rounds": 3, "challenge_mode": "fixed", "match": true, "seconds": 555.55}
+{"workload": "poly_aabbc", "bit_width": 256, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "fixed", "match": true, "seconds": 0.02}
+{"workload": "poly_aabbc", "bit_width": 256, "layout": "element", "point_mode": "specialized", "rounds": 10, "challenge_mode": "sha3", "match": true, "seconds": 0.03}

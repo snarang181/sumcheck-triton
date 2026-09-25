@@ -1,0 +1,7 @@
+zk_vanilla_permcheck_hp  field=p255_bls12_381_scalar        rounds=24 first_ms=288.167 median_ms=216.928 checksum=125514718366453
+experiments/a100/followups/diag/raw/base_all/zk_vanilla_permcheck_hp_bw256_r24_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-360e.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep[1/1] [5%                          ] zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep[1/1] [=======39%                  ] zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep[1/1] [==================76%       ] zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_vanilla_permcheck_hp_bw256_r24_specialized_triton.nsys-rep

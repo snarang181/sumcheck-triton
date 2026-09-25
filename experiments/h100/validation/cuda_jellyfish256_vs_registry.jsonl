@@ -1,0 +1,3 @@
+{"workload": "zk_jellyfish_zerocheck_hp", "bit_width": 256, "rounds": 3, "challenge_mode": "fixed", "point_mode": "specialized", "cuda_checksum": 3234751255878, "reference_checksum": 3234751255878, "match": true}
+{"workload": "zk_jellyfish_zerocheck_hp", "bit_width": 256, "rounds": 10, "challenge_mode": "fixed", "point_mode": "specialized", "cuda_checksum": 11568422581790, "reference_checksum": 11568422581790, "match": true}
+{"workload": "zk_jellyfish_zerocheck_hp", "bit_width": 256, "rounds": 10, "challenge_mode": "sha3", "point_mode": "specialized", "cuda_checksum": 11123595274510, "reference_checksum": 11123595274510, "match": true}

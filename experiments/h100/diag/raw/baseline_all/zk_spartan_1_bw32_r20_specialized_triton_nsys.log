@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_spartan_1             field=p32_2^32_minus_5             rounds=20 first_ms=64.203 median_ms=12.270 checksum=2007652687482
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_spartan_1_bw32_r20_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-f4b9.qdstrm'
+[1/1] [0%                          ] zk_spartan_1_bw32_r20_specialized_triton.nsys-rep[1/1] [0%                          ] zk_spartan_1_bw32_r20_specialized_triton.nsys-rep[1/1] [8%                          ] zk_spartan_1_bw32_r20_specialized_triton.nsys-rep[1/1] [==================78%       ] zk_spartan_1_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_spartan_1_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_spartan_1_bw32_r20_specialized_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_spartan_1_bw32_r20_specialized_triton.nsys-rep

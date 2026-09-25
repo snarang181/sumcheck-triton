@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_witness_id_point_1    field=p255_bls12_381_scalar        rounds=24 first_ms=141.638 median_ms=64.843 checksum=125589484436936
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_specialized/zk_witness_id_point_1_bw256_r24_specialized_limb_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-68b9.qdstrm'
+[1/1] [0%                          ] zk_witness_id_point_1_bw256_r24_specialized_limb_triton.nsys-rep[1/1] [0%                          ] zk_witness_id_point_1_bw256_r24_specialized_limb_triton.nsys-rep[1/1] [========42%                 ] zk_witness_id_point_1_bw256_r24_specialized_limb_triton.nsys-rep[1/1] [==================77%       ] zk_witness_id_point_1_bw256_r24_specialized_limb_triton.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw256_r24_specialized_limb_triton.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw256_r24_specialized_limb_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_specialized/zk_witness_id_point_1_bw256_r24_specialized_limb_triton.nsys-rep

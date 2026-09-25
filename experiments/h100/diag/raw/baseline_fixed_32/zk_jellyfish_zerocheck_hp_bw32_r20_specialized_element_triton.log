@@ -1,0 +1,2 @@
+zk_jellyfish_zerocheck_hp field=p32_2^32_minus_5             rounds=20 first_ms=92.652 median_ms=18.922 checksum=4455850897641
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_fixed_32/zk_jellyfish_zerocheck_hp_bw32_r20_specialized_element_triton.csv

@@ -1,0 +1,2 @@
+zk_witness_non_id        field=p32_2^32_minus_5             rounds=20 first_ms=74.719 median_ms=11.922 checksum=2669918320433
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_witness_non_id_bw32_r20_specialized_triton.csv

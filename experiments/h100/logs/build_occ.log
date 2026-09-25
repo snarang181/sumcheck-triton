@@ -1,0 +1,2 @@
+built build/field_sumcheck_cuda_occ (workloads: 4 10 15 20 29; patches: experiments/h100/patches/cuda_int64_index.patch experiments/h100/patches/cuda_occupancy_knob.patch)
+seconds=474

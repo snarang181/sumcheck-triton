@@ -1,0 +1,30 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_jellyfish_zerocheck_hp --rounds 28 --bit-widths 32 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep/cases/zk_jellyfish_zerocheck_hp_bw32_r28_triton.csv
+Traceback (most recent call last):
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/triton_sweep.py", line 914, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/triton_sweep.py", line 888, in main
+    row = _time_one(
+          ^^^^^^^^^^
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/triton_sweep.py", line 668, in _time_one
+    torch.cuda.synchronize()
+  File "/home/ubuntu/venvs/zkduel-table5/lib/python3.12/site-packages/torch/cuda/__init__.py", line 1181, in synchronize
+    return torch._C._cuda_synchronize()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+Traceback (most recent call last):
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/compare_triton_cuda.py", line 251, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/compare_triton_cuda.py", line 77, in main
+    run(
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/compare_triton_cuda.py", line 22, in run
+    subprocess.run(cmd, check=True)
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/ubuntu/venvs/zkduel-table5/bin/python', '-u', 'benchmarks/field_sweep/triton_sweep.py', '--workloads', 'zk_jellyfish_zerocheck_hp', '--rounds', '28', '--bit-widths', '32', '--warmups', '2', '--repeats', '10', '--seed', '1', '--timing-mode', 'whole-run', '--challenge-mode', 'fixed', '--layout', 'element', '--point-mode', 'specialized', '--out', 'experiments/h100/sweep/cases/zk_jellyfish_zerocheck_hp_bw32_r28_triton.csv']' returned non-zero exit status 1.

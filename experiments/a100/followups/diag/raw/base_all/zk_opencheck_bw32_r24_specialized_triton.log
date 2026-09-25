@@ -1,0 +1,2 @@
+zk_opencheck             field=p32_2^32_minus_5             rounds=24 first_ms=49.933 median_ms=13.566 checksum=2100535341255
+experiments/a100/followups/diag/raw/base_all/zk_opencheck_bw32_r24_specialized_triton.csv

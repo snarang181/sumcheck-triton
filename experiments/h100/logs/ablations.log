@@ -1,0 +1,5 @@
+2026-09-25T10:21:19Z compile: Triton kernels for element/generic, limb/specialized, limb/generic
+2026-09-25T11:57:31Z compile done: 150 ok, 0 failed
+2026-09-25T11:57:31Z timing: layout x interpolation, both backends
+2026-09-25T12:24:48Z timing: CUDA thread-block size
+2026-09-25T12:35:14Z done

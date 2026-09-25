@@ -1,0 +1,7 @@
+zk_witness_id_point_1    field=p32_2^32_minus_5             rounds=20 first_ms=56.895 median_ms=16.131 checksum=3091985749918
+experiments/a100/followups/diag/raw/base_all/zk_witness_id_point_1_bw32_r20_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-4749.qdstrm'
+[1/1] [0%                          ] zk_witness_id_point_1_bw32_r20_specialized_triton.nsys-rep[1/1] [0%                          ] zk_witness_id_point_1_bw32_r20_specialized_triton.nsys-rep[1/1] [=============58%            ] zk_witness_id_point_1_bw32_r20_specialized_triton.nsys-rep[1/1] [==================77%       ] zk_witness_id_point_1_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw32_r20_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_witness_id_point_1_bw32_r20_specialized_triton.nsys-rep

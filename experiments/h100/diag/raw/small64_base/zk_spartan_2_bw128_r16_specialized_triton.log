@@ -1,0 +1,2 @@
+zk_spartan_2             field=p128_mersenne_2^127_minus_1  rounds=16 first_ms=581.766 median_ms=4.742 checksum=4049074650790
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/small64_base/zk_spartan_2_bw128_r16_specialized_triton.csv

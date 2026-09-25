@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u experiments/h100/tools/triton_sweep_treduce.py --workloads zk_jellyfish_permcheck_hp --rounds 16 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw128_r16_triton.csv
+zk_jellyfish_permcheck_hp field=p128_mersenne_2^127_minus_1  rounds=16 first_ms=103.222 median_ms=12.203 checksum=29557530134080
+experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw128_r16_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_jellyfish_permcheck_hp --rounds 16 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw128_r16_cuda.csv
+zk_jellyfish_permcheck_hp field=p128_mersenne_2^127_minus_1 rounds=16 first_ms=6.60893 median_ms=5.0249 checksum=29557530134080
+zk_jellyfish_permcheck_hp field=p128_mersenne_2^127_minus_1  rounds=16 triton_ms=12.203 cuda_ms=5.0249 checksum_match=true speedup=2.428506
+experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw128_r16_joined.csv

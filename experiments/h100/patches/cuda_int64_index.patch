@@ -1,0 +1,38 @@
+--- a/cuda/src/field_sumcheck.cu	2026-09-24 21:08:21.553579502 +0000
++++ b/cuda/src/field_sumcheck.cu	2026-09-24 21:08:21.623577949 +0000
+@@ -593,7 +593,7 @@
+ template <int L, bool LIMB_MAJOR>
+ __global__ void fill_tables_kernel(uint32_t* tables, int num_vars, size_t n, int seed,
+                                    const uint32_t* mod, const uint32_t* r2, uint32_t nprime) {
+-  size_t idx = blockIdx.x * blockDim.x + threadIdx.x;
++  size_t idx = static_cast<size_t>(blockIdx.x) * blockDim.x + threadIdx.x;
+   size_t total = static_cast<size_t>(num_vars) * n;
+   if (idx >= total) return;
+   int var = static_cast<int>(idx / n);
+@@ -615,7 +615,7 @@
+                             const uint32_t* mod, const uint32_t* point_monts, uint32_t nprime) {
+   extern __shared__ uint32_t sh[];
+   int tid = threadIdx.x;
+-  size_t off = blockIdx.x * blockDim.x + tid;
++  size_t off = static_cast<size_t>(blockIdx.x) * blockDim.x + tid;
+   size_t row_stride = half_n * 2;
+ 
+   FE<L> total = zero_fe<L>();
+@@ -660,7 +660,7 @@
+ template <int L>
+ __global__ void reduce_pairs_kernel(const uint32_t* partials_in, uint32_t* partials_out,
+                                     size_t n, const uint32_t* mod) {
+-  size_t idx = blockIdx.x * blockDim.x + threadIdx.x;
++  size_t idx = static_cast<size_t>(blockIdx.x) * blockDim.x + threadIdx.x;
+   size_t out_n = (n + 1) / 2;
+   if (idx >= out_n) return;
+   size_t lhs = 2 * idx;
+@@ -677,7 +677,7 @@
+ template <int NUM_VARS, int L, bool LIMB_MAJOR>
+ __global__ void fold_kernel(const uint32_t* tables, uint32_t* out, size_t half_n,
+                             const uint32_t* mod, const uint32_t* r_mont, uint32_t nprime) {
+-  size_t idx = blockIdx.x * blockDim.x + threadIdx.x;
++  size_t idx = static_cast<size_t>(blockIdx.x) * blockDim.x + threadIdx.x;
+   size_t total = static_cast<size_t>(NUM_VARS) * half_n;
+   if (idx >= total) return;
+   int var = static_cast<int>(idx / half_n);

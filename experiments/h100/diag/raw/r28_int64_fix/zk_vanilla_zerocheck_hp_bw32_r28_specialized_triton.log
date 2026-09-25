@@ -1,0 +1,2 @@
+zk_vanilla_zerocheck_hp  field=p32_2^32_minus_5             rounds=28 first_ms=191.872 median_ms=141.539 checksum=4081837965894
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_vanilla_zerocheck_hp_bw32_r28_specialized_triton.csv

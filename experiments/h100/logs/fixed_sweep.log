@@ -1,0 +1,17 @@
+2026-09-25T17:17:16Z phase 0: CUDA build from fixed source
+2026-09-25T18:13:05Z phase 0 done: BUILD_OK seconds=3348 sha256=aae6453dbc1e5f3b source=1604b2f
+2026-09-25T18:23:12Z gate: host latency back to baseline (cuda 2.8791 ms)
+2026-09-25T18:23:12Z sweep diag_tier: start
+2026-09-25T18:43:16Z sweep diag_tier: done rc=0 rows=224
+2026-09-25T18:43:18Z pushed: diag_tier
+2026-09-25T18:43:18Z sweep zk_32_128: start
+2026-09-25T19:40:03Z sweep zk_32_128: done rc=0 rows=600
+2026-09-25T19:40:06Z pushed: zk_32_128
+2026-09-25T19:40:06Z sweep zk_256: start
+2026-09-25T20:01:26Z sweep zk_256: done rc=0 rows=192
+2026-09-25T20:01:28Z pushed: zk_256
+2026-09-25T20:01:28Z diagnostics: wall-clock vs GPU-kernel split (Table split) with the fixed binary
+2026-09-25T20:05:46Z diagnostics done: 12 records
+2026-09-25T20:05:48Z pushed: finished
+slack api ok
+2026-09-25T20:05:48Z all done

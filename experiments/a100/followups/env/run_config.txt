@@ -1,0 +1,5 @@
+CUDA_BIN=build/field_sumcheck_cuda (00fae756e1fcc7e3)
+BASE_CACHE=/home/ubuntu/sumcheck-triton/.triton-cache-sumcheck-field
+TRED_CACHE=/home/ubuntu/sumcheck-triton/.triton-cache-a100-treduce
+SUB256=zk_spartan_2 zk_witness_id_point_1 zk_complete_add_3 zk_vanilla_permcheck_hp
+git=85fd8f8

@@ -1,0 +1,2 @@
+zk_opencheck             field=p255_bls12_381_scalar        rounds=24 first_ms=115.018 median_ms=55.863 checksum=67243387918005
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_element_specialized/zk_opencheck_bw256_r24_specialized_element_triton.csv

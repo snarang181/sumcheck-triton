@@ -1,0 +1,6 @@
+zk_vanilla_permcheck_hp field=p32_2^32_minus_5 rounds=20 first_ms=4.54867 median_ms=4.3792 checksum=3649621384734
+Collecting data...
+Generating '/tmp/nsys-report-bc1b.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [================70%         ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/treduce_all/zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep

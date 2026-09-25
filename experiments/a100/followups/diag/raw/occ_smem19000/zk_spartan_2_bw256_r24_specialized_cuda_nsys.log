@@ -1,0 +1,9 @@
+occupancy W=10 L=8 mode=1 idx=0 block=128 smem=19000 blocks_per_sm=8
+occupancy W=10 L=8 mode=1 idx=1 block=128 smem=19000 blocks_per_sm=8
+occupancy W=10 L=8 mode=1 idx=2 block=128 smem=19000 blocks_per_sm=8
+zk_spartan_2 field=p255_bls12_381_scalar rounds=24 first_ms=11.9975 median_ms=11.7819 checksum=62247910145291
+Collecting data...
+Generating '/tmp/nsys-report-49d1.qdstrm'
+[1/1] [0%                          ] zk_spartan_2_bw256_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_spartan_2_bw256_r24_specialized_cuda.nsys-rep[1/1] [5%                          ] zk_spartan_2_bw256_r24_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_spartan_2_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw256_r24_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/occ_smem19000/zk_spartan_2_bw256_r24_specialized_cuda.nsys-rep

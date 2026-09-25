@@ -1,0 +1,7 @@
+zk_jellyfish_permcheck_hp field=p32_2^32_minus_5             rounds=28 first_ms=414.590 median_ms=374.593 checksum=5582807891271
+experiments/a100/followups/diag/raw/r28_fixed/zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-9a8a.qdstrm'
+[1/1] [0%                          ] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [0%                          ] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [5%                          ] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [==21%                       ] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [========42%                 ] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [==============62%           ] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [==================76%       ] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/r28_fixed/zk_jellyfish_permcheck_hp_bw32_r28_specialized_triton.nsys-rep

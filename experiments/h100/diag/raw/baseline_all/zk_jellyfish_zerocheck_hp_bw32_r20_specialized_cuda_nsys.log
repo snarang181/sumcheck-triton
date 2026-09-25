@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_jellyfish_zerocheck_hp field=p32_2^32_minus_5 rounds=20 first_ms=7.50045 median_ms=6.8624 checksum=4455850897641
+Collecting data...
+Generating '/tmp/nsys-report-482a.qdstrm'
+[1/1] [0%                          ] zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [5%                          ] zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [============56%             ] zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_jellyfish_zerocheck_hp_bw32_r20_specialized_cuda.nsys-rep

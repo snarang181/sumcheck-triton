@@ -1,0 +1,2 @@
+workload,polynomial,backend,field,arithmetic,layout,point_mode,bit_width,limbs,modulus_hex,rounds,N,vars,degree,terms,warmups,repeats,timing_mode,challenge_mode,first_ms,median_ms,eval_median_ms,challenge_median_ms,fold_median_ms,total_median_ms,input_mib,checksum,status
+zk_verifiable_asics,qadd*a + qadd*b + qmul*a*b,triton-sumcheck-prime-field-montgomery-element-layout-specialized-points,p64_goldilocks,montgomery,element,specialized,64,2,0xffffffff00000001,28,268435456,4,3,3,2,10,whole-run,fixed,151.287,102.169,0.000,0.000000,0.000,102.169,8192.000000,9431506424483,ok

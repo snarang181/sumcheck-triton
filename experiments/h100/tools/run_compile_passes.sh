@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# Per-pass compile timing for zk_jellyfish_zerocheck_hp's heaviest eval kernel (point 7):
+# stage times (compile listener) and MLIR per-pass times (MLIR_ENABLE_TIMING=1) from the
+# same compile, so pass shares of the TTGIR stage are exact. Triton 3.7.0 and 3.8.0,
+# 32/64/128 bits, each from a fresh cache.
+# Optional overrides (defaults are the original run's): ZKDUEL_DIAG_DIR, ZKDUEL_LOG_DIR (output
+# directories), ZKDUEL_TRITON38_PY (python of a Triton 3.8.0 venv), ZKDUEL_TRITON_VERSIONS
+# (default "3.7.0 3.8.0").
+cd "$(dirname "$0")/../../.."
+source experiments/h100/env_table5.sh
+OUT=${ZKDUEL_DIAG_DIR:-experiments/h100/diag}/compile_passes.jsonl
+LOGS=${ZKDUEL_LOG_DIR:-experiments/h100/logs}
+mkdir -p "$(dirname "$OUT")" "$LOGS"
+declare -A PYS=([3.7.0]="$ZKDUEL_VENV/bin/python" [3.8.0]=${ZKDUEL_TRITON38_PY:-/home/ubuntu/venvs/zkduel-triton38/bin/python})
+for ver in ${ZKDUEL_TRITON_VERSIONS:-3.7.0 3.8.0}; do
+  for bw in 32 64 128; do
+    ( cache=$(mktemp -d)
+      json=$(MLIR_ENABLE_TIMING=1 TRITON_CACHE_DIR=$cache nice -n 10 ${PYS[$ver]} \
+        experiments/h100/tools/compile_profile.py zk_jellyfish_zerocheck_hp $bw 7 \
+        2> $LOGS/mlir_passes_${ver}_$bw.txt)
+      echo "$json" >> $OUT
+      rm -rf "$cache" ) &
+  done
+done
+wait
+echo COMPILE_PASSES_DONE

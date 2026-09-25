@@ -1,0 +1,2 @@
+zk_vanilla_permcheck_hp  field=p32_2^32_minus_5             rounds=20 first_ms=129.886 median_ms=12.398 checksum=3649621384734
+experiments/a100/followups/diag/raw/base_all/zk_vanilla_permcheck_hp_bw32_r20_specialized_triton.csv

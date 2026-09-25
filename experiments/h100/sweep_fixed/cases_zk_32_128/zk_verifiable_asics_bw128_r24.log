@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_verifiable_asics --rounds 24 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_verifiable_asics_bw128_r24_triton.csv
+zk_verifiable_asics      field=p128_mersenne_2^127_minus_1  rounds=24 first_ms=73.922 median_ms=20.437 checksum=20554208068290
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_verifiable_asics_bw128_r24_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_verifiable_asics --rounds 24 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_verifiable_asics_bw128_r24_cuda.csv
+zk_verifiable_asics field=p128_mersenne_2^127_minus_1 rounds=24 first_ms=9.93544 median_ms=9.69042 checksum=20554208068290
+zk_verifiable_asics      field=p128_mersenne_2^127_minus_1  rounds=24 triton_ms=20.437 cuda_ms=9.69042 checksum_match=true speedup=2.108990
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_verifiable_asics_bw128_r24_joined.csv

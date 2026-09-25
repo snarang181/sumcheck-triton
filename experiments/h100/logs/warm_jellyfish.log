@@ -1,0 +1,38 @@
+zk_jellyfish_zerocheck_hp 128-bit point 0: 0.8s
+zk_jellyfish_zerocheck_hp 128-bit point 1: 0.8s
+jellyfish_zerocheck 128-bit point 0 exit=0 wall_s=15
+jellyfish_zerocheck 128-bit point 1 exit=0 wall_s=15
+zk_jellyfish_zerocheck_hp 128-bit point 2: 1556.4s
+jellyfish_zerocheck 128-bit point 2 exit=0 wall_s=1569
+zk_jellyfish_zerocheck_hp 128-bit point 3: 1697.9s
+jellyfish_zerocheck 128-bit point 3 exit=0 wall_s=1710
+zk_jellyfish_zerocheck_hp 128-bit point 4: 1882.0s
+jellyfish_zerocheck 128-bit point 4 exit=0 wall_s=1892
+zk_jellyfish_zerocheck_hp 128-bit point 5: 2005.4s
+jellyfish_zerocheck 128-bit point 5 exit=0 wall_s=2018
+zk_jellyfish_zerocheck_hp 128-bit point 6: 2291.2s
+jellyfish_zerocheck 128-bit point 6 exit=0 wall_s=2304
+zk_jellyfish_zerocheck_hp 128-bit point 7: 2504.8s
+jellyfish_zerocheck 128-bit point 7 exit=0 wall_s=2518
+zk_jellyfish_zerocheck_hp 256-bit point 1: 6563.8s
+jellyfish_zerocheck 256-bit point 1 exit=0 wall_s=6577
+zk_jellyfish_zerocheck_hp 256-bit point 0: 6702.8s
+jellyfish_zerocheck 256-bit point 0 exit=0 wall_s=6716
+experiments/h100/tools/run_warm_jellyfish.sh: line 11: 91904 Killed                  timeout 14400 python experiments/h100/tools/warm_cache.py zk_jellyfish_zerocheck_hp "$bw" "$p"
+experiments/h100/tools/run_warm_jellyfish.sh: line 11: 91903 Killed                  timeout 14400 python experiments/h100/tools/warm_cache.py zk_jellyfish_zerocheck_hp "$bw" "$p"
+experiments/h100/tools/run_warm_jellyfish.sh: line 11: 91912 Killed                  timeout 14400 python experiments/h100/tools/warm_cache.py zk_jellyfish_zerocheck_hp "$bw" "$p"
+experiments/h100/tools/run_warm_jellyfish.sh: line 11: 91899 Killed                  timeout 14400 python experiments/h100/tools/warm_cache.py zk_jellyfish_zerocheck_hp "$bw" "$p"
+experiments/h100/tools/run_warm_jellyfish.sh: line 11: 91898 Killed                  timeout 14400 python experiments/h100/tools/warm_cache.py zk_jellyfish_zerocheck_hp "$bw" "$p"
+experiments/h100/tools/run_warm_jellyfish.sh: line 11: 91911 Killed                  timeout 14400 python experiments/h100/tools/warm_cache.py zk_jellyfish_zerocheck_hp "$bw" "$p"
+jellyfish_zerocheck 256-bit point 6 exit=137 wall_s=11829
+jellyfish_zerocheck 256-bit point 5 exit=137 wall_s=11829
+jellyfish_zerocheck 256-bit point 3 exit=137 wall_s=11829
+jellyfish_zerocheck 256-bit point 2 exit=137 wall_s=11829
+jellyfish_zerocheck 256-bit point 4 exit=137 wall_s=11829
+jellyfish_zerocheck 256-bit point 7 exit=137 wall_s=11829
+JELLYFISH_WARM_DONE
+zk_jellyfish_zerocheck_hp 256-bit point 2: 16622.7s
+zk_jellyfish_zerocheck_hp 256-bit point 3: 18239.1s
+zk_jellyfish_zerocheck_hp 256-bit point 4: 20054.1s
+zk_jellyfish_zerocheck_hp 256-bit point 5: 21831.6s
+zk_jellyfish_zerocheck_hp 256-bit point 6: 24245.3s

@@ -1,0 +1,2 @@
+workload,polynomial,backend,field,arithmetic,layout,point_mode,bit_width,limbs,modulus_hex,rounds,N,vars,degree,terms,warmups,repeats,timing_mode,challenge_mode,first_ms,median_ms,eval_median_ms,challenge_median_ms,fold_median_ms,total_median_ms,input_mib,checksum,status
+zk_spartan_2,"ABC*Z",cuda-sumcheck-prime-field-montgomery-element-layout-specialized-points,p128_mersenne_2^127_minus_1,montgomery,element,specialized,128,4,0x7fffffffffffffffffffffffffffffff,16,65536,2,2,1,2,10,whole-run,fixed,1.77968,1.5112,0,0,0,1.5112,2.000000,4049074650790,ok

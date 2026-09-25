@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+poly_abc field=p255_bls12_381_scalar rounds=24 first_ms=16.5831 median_ms=16.1228 checksum=82965085710312
+Collecting data...
+Generating '/tmp/nsys-report-f571.qdstrm'
+[1/1] [0%                          ] poly_abc_bw256_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] poly_abc_bw256_r24_specialized_cuda.nsys-rep[1/1] [9%                          ] poly_abc_bw256_r24_specialized_cuda.nsys-rep[1/1] [================71%         ] poly_abc_bw256_r24_specialized_cuda.nsys-rep[1/1] [==================77%       ] poly_abc_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] poly_abc_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] poly_abc_bw256_r24_specialized_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/poly_abc_bw256_r24_specialized_cuda.nsys-rep

@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_vanilla_zerocheck_hp --rounds 26 --bit-widths 32 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_zerocheck_hp_bw32_r26_triton.csv
+zk_vanilla_zerocheck_hp  field=p32_2^32_minus_5             rounds=26 first_ms=97.737 median_ms=46.221 checksum=3416320475308
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_zerocheck_hp_bw32_r26_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_vanilla_zerocheck_hp --rounds 26 --bit-widths 32 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_zerocheck_hp_bw32_r26_cuda.csv
+zk_vanilla_zerocheck_hp field=p32_2^32_minus_5 rounds=26 first_ms=21.0538 median_ms=20.7948 checksum=3416320475308
+zk_vanilla_zerocheck_hp  field=p32_2^32_minus_5             rounds=26 triton_ms=46.221 cuda_ms=20.7948 checksum_match=true speedup=2.222719
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_zerocheck_hp_bw32_r26_joined.csv

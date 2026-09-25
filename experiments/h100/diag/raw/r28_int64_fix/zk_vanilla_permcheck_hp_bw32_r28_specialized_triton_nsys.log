@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_vanilla_permcheck_hp  field=p32_2^32_minus_5             rounds=28 first_ms=210.791 median_ms=184.368 checksum=4575926642859
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_vanilla_permcheck_hp_bw32_r28_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-5577.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [7%                          ] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [8%                          ] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [=====30%                    ] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [============57%             ] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [==================76%       ] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.nsys-rep

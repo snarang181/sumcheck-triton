@@ -1,0 +1,56 @@
+--- b/cuda/src/field_sumcheck.cu	2026-09-24 21:08:21.623577949 +0000
++++ c/cuda/src/field_sumcheck.cu	2026-09-24 21:08:21.624577926 +0000
+@@ -5,6 +5,7 @@
+ #include <algorithm>
+ #include <chrono>
+ #include <cstdint>
++#include <cstdio>
+ #include <cstdlib>
+ #include <filesystem>
+ #include <fstream>
+@@ -912,14 +913,43 @@
+   return xs[xs.size() / 2];
+ }
+ 
++// Ablation knob: extra dynamic shared memory per eval block (bytes), which caps resident
++// blocks per SM and so lowers occupancy without changing the kernel's code or registers.
++// ZKDUEL_REPORT_OCCUPANCY=1 prints the achieved blocks/SM once per eval instantiation.
++static size_t eval_extra_smem() {
++  static const size_t v = [] {
++    const char* s = std::getenv("ZKDUEL_EVAL_EXTRA_SMEM");
++    return s ? static_cast<size_t>(std::strtoull(s, nullptr, 10)) : size_t{0};
++  }();
++  return v;
++}
++
+ template <int W, int NV, int L, bool LIMB_MAJOR>
+ static void dispatch_eval_point(unsigned grid, int block, size_t shmem_bytes,
+                                 const uint32_t* tables, uint32_t* partials, size_t half_n,
+                                 int point_idx, int point_mode, const uint32_t* d_mod,
+                                 const uint32_t* d_points, uint32_t nprime) {
+ #define LAUNCH_P(MODE, IDX)                                                                  \
+-      eval_kernel<W, NV, L, LIMB_MAJOR, MODE, IDX><<<grid, block, shmem_bytes>>>(            \
+-          tables, partials, half_n, d_mod, d_points, nprime);                                \
++  {                                                                                          \
++    const size_t smem_total = shmem_bytes + eval_extra_smem();                               \
++    static bool configured = false;                                                          \
++    if (!configured) {                                                                       \
++      if (eval_extra_smem() > 0)                                                             \
++        CUDA_CHECK(cudaFuncSetAttribute(eval_kernel<W, NV, L, LIMB_MAJOR, MODE, IDX>,         \
++                                        cudaFuncAttributeMaxDynamicSharedMemorySize,         \
++                                        static_cast<int>(smem_total)));                      \
++      if (std::getenv("ZKDUEL_REPORT_OCCUPANCY")) {                                          \
++        int blocks = 0;                                                                      \
++        CUDA_CHECK(cudaOccupancyMaxActiveBlocksPerMultiprocessor(                            \
++            &blocks, eval_kernel<W, NV, L, LIMB_MAJOR, MODE, IDX>, block, smem_total));      \
++        std::fprintf(stderr, "occupancy W=%d L=%d mode=%d idx=%d block=%d smem=%zu "         \
++                     "blocks_per_sm=%d\n", W, L, MODE, IDX, block, smem_total, blocks);      \
++      }                                                                                      \
++      configured = true;                                                                     \
++    }                                                                                        \
++    eval_kernel<W, NV, L, LIMB_MAJOR, MODE, IDX><<<grid, block, smem_total>>>(               \
++        tables, partials, half_n, d_mod, d_points, nprime);                                  \
++  }                                                                                          \
+       break;
+   if (point_mode == 1) {
+     switch (point_idx) {

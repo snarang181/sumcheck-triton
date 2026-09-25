@@ -1,0 +1,2 @@
+zk_witness_id_point_2    field=p32_2^32_minus_5             rounds=20 first_ms=53.908 median_ms=12.286 checksum=3109515453980
+experiments/a100/followups/diag/raw/base_all/zk_witness_id_point_2_bw32_r20_specialized_triton.csv

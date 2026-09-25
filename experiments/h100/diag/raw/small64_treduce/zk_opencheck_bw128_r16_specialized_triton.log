@@ -1,0 +1,2 @@
+zk_opencheck             field=p128_mersenne_2^127_minus_1  rounds=16 first_ms=58.768 median_ms=4.671 checksum=4361471618634
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/small64_treduce/zk_opencheck_bw128_r16_specialized_triton.csv

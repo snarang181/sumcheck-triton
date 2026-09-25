@@ -1,0 +1,2 @@
+zk_vanilla_permcheck_hp  field=p32_2^32_minus_5             rounds=28 first_ms=391.599 median_ms=185.508 checksum=4575926642859
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_vanilla_permcheck_hp_bw32_r28_specialized_triton.csv

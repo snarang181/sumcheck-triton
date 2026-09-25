@@ -1,0 +1,7 @@
+occupancy W=15 L=8 mode=1 idx=0 block=128 smem=44000 blocks_per_sm=5
+occupancy W=15 L=8 mode=1 idx=1 block=128 smem=44000 blocks_per_sm=5
+occupancy W=15 L=8 mode=1 idx=2 block=128 smem=44000 blocks_per_sm=5
+occupancy W=15 L=8 mode=1 idx=3 block=128 smem=44000 blocks_per_sm=5
+occupancy W=15 L=8 mode=1 idx=4 block=128 smem=44000 blocks_per_sm=5
+occupancy W=15 L=8 mode=1 idx=5 block=128 smem=44000 blocks_per_sm=5
+zk_witness_id_point_1 field=p255_bls12_381_scalar rounds=20 first_ms=8.75219 median_ms=7.43738 checksum=106131664884986

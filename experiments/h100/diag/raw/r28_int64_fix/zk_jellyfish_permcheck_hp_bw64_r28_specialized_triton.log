@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/sumcheck-triton/experiments/h100/tools/triton_sweep_fixed.py", line 17, in <module>
+    raise SystemExit(overflow_fix.ts.main())
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/triton_sweep.py", line 888, in main
+    row = _time_one(
+          ^^^^^^^^^^
+  File "/home/ubuntu/sumcheck-triton/benchmarks/field_sweep/triton_sweep.py", line 642, in _time_one
+    scratch_b = torch.empty_like(tables)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 30.00 GiB. GPU 0 has a total capacity of 79.19 GiB of which 18.66 GiB is free. Including non-PyTorch memory, this process has 60.52 GiB memory in use. Of the allocated memory 60.00 GiB is allocated by PyTorch, and 0 bytes is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

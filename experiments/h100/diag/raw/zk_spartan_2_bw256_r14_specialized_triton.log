@@ -1,0 +1,2 @@
+zk_spartan_2             field=p255_bls12_381_scalar        rounds=14 first_ms=56.939 median_ms=3.589 checksum=35920410883539
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/zk_spartan_2_bw256_r14_specialized_triton.csv

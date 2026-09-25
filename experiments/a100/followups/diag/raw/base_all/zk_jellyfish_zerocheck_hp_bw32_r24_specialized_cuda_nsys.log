@@ -1,0 +1,6 @@
+zk_jellyfish_zerocheck_hp field=p32_2^32_minus_5 rounds=24 first_ms=26.7626 median_ms=26.5884 checksum=5521674021669
+Collecting data...
+Generating '/tmp/nsys-report-27e5.qdstrm'
+[1/1] [0%                          ] zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [======35%                   ] zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [================68%         ] zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_jellyfish_zerocheck_hp_bw32_r24_specialized_cuda.nsys-rep

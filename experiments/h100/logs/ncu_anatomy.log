@@ -1,0 +1,15 @@
+zk_spartan_2_bw256_triton rc=0 rows=53
+zk_spartan_2_bw256_treduce rc=0 rows=53
+zk_spartan_2_bw256_cuda rc=0 rows=55
+zk_complete_add_3_bw32_triton rc=0 rows=56
+zk_complete_add_3_bw32_treduce rc=0 rows=53
+zk_complete_add_3_bw32_cuda rc=0 rows=53
+zk_complete_add_3_bw256_triton rc=0 rows=52
+zk_complete_add_3_bw256_treduce rc=0 rows=52
+zk_complete_add_3_bw256_cuda rc=0 rows=52
+zk_witness_id_point_1_bw256_triton rc=0 rows=54
+zk_witness_id_point_1_bw256_treduce rc=0 rows=54
+zk_witness_id_point_1_bw256_cuda rc=0 rows=52
+zk_vanilla_permcheck_hp_bw256_triton rc=0 rows=54
+zk_vanilla_permcheck_hp_bw256_treduce rc=0 rows=54
+zk_vanilla_permcheck_hp_bw256_cuda rc=0 rows=52

@@ -1,0 +1,7 @@
+zk_opencheck             field=p64_goldilocks               rounds=28 first_ms=202.239 median_ms=169.884 checksum=6926411686259
+experiments/a100/followups/diag/raw/r28_fixed/zk_opencheck_bw64_r28_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-d737.qdstrm'
+[1/1] [0%                          ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [0%                          ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [============55%             ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [==================76%       ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [==================77%       ] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_opencheck_bw64_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_opencheck_bw64_r28_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/r28_fixed/zk_opencheck_bw64_r28_specialized_triton.nsys-rep

@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_complete_add_3 field=p32_2^32_minus_5 rounds=24 first_ms=10.5735 median_ms=10.112 checksum=4496078752126
+Collecting data...
+Generating '/tmp/nsys-report-e3ec.qdstrm'
+[1/1] [0%                          ] zk_complete_add_3_bw32_r24_generic_limb_cuda.nsys-rep[1/1] [0%                          ] zk_complete_add_3_bw32_r24_generic_limb_cuda.nsys-rep[1/1] [========42%                 ] zk_complete_add_3_bw32_r24_generic_limb_cuda.nsys-rep[1/1] [==================75%       ] zk_complete_add_3_bw32_r24_generic_limb_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_3_bw32_r24_generic_limb_cuda.nsys-rep[1/1] [========================100%] zk_complete_add_3_bw32_r24_generic_limb_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_limb_generic/zk_complete_add_3_bw32_r24_generic_limb_cuda.nsys-rep

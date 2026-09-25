@@ -1,0 +1,5 @@
+occupancy W=4 L=8 mode=1 idx=0 block=128 smem=56000 blocks_per_sm=4
+occupancy W=4 L=8 mode=1 idx=1 block=128 smem=56000 blocks_per_sm=4
+occupancy W=4 L=8 mode=1 idx=2 block=128 smem=56000 blocks_per_sm=4
+occupancy W=4 L=8 mode=1 idx=3 block=128 smem=56000 blocks_per_sm=4
+poly_abc field=p255_bls12_381_scalar rounds=20 first_ms=4.77475 median_ms=4.14358 checksum=71524069559800

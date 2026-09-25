@@ -1,0 +1,2 @@
+zk_spartan_2             field=p32_2^32_minus_5             rounds=20 first_ms=124.307 median_ms=6.577 checksum=1740042488314
+experiments/a100/followups/diag/raw/base_all/zk_spartan_2_bw32_r20_specialized_triton.csv

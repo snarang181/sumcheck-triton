@@ -1,0 +1,21 @@
+# Local hooks only: no network fetch is needed when hooks run.
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff check
+        entry: ruff check --fix
+        language: system
+        types_or: [python, pyi]
+
+      - id: ruff-format
+        name: ruff format
+        entry: ruff format
+        language: system
+        types_or: [python, pyi]
+
+      - id: py-compile
+        name: python compile
+        entry: python -m py_compile
+        language: system
+        types: [python]

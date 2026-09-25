@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_vanilla_permcheck_hp  field=p32_2^32_minus_5             rounds=20 first_ms=43.332 median_ms=10.364 checksum=3649621384734
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_element_generic/zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-b562.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep[1/1] [5%                          ] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep[1/1] [6%                          ] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep[1/1] [==============61%           ] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep[1/1] [==================78%       ] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_element_generic/zk_vanilla_permcheck_hp_bw32_r20_generic_element_triton.nsys-rep

@@ -1,0 +1,13 @@
+.venv/
+.venv-*/
+.zkduel_env.sh
+__pycache__/
+.pytest_cache/
+*.egg-info/
+profiles/*.nsys-rep
+profiles/*.sqlite
+profiles/*.ncu-rep
+results*/
+.triton-cache/
+.triton-cache-*/
+build/

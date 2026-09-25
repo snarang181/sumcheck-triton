@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u experiments/h100/tools/triton_sweep_treduce.py --workloads zk_jellyfish_permcheck_hp --rounds 22 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw64_r22_triton.csv
+zk_jellyfish_permcheck_hp field=p64_goldilocks               rounds=22 first_ms=57.701 median_ms=16.860 checksum=14893023102763
+experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw64_r22_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_jellyfish_permcheck_hp --rounds 22 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw64_r22_cuda.csv
+zk_jellyfish_permcheck_hp field=p64_goldilocks rounds=22 first_ms=12.7821 median_ms=12.0764 checksum=14893023102763
+zk_jellyfish_permcheck_hp field=p64_goldilocks               rounds=22 triton_ms=16.860 cuda_ms=12.0764 checksum_match=true speedup=1.396111
+experiments/h100/sweep_treduce/cases/zk_jellyfish_permcheck_hp_bw64_r22_joined.csv

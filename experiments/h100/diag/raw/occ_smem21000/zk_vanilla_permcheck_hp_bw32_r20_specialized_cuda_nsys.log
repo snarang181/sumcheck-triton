@@ -1,0 +1,16 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+occupancy W=29 L=1 mode=1 idx=0 block=128 smem=21000 blocks_per_sm=10
+occupancy W=29 L=1 mode=1 idx=1 block=128 smem=21000 blocks_per_sm=10
+occupancy W=29 L=1 mode=1 idx=2 block=128 smem=21000 blocks_per_sm=10
+occupancy W=29 L=1 mode=1 idx=3 block=128 smem=21000 blocks_per_sm=10
+occupancy W=29 L=1 mode=1 idx=4 block=128 smem=21000 blocks_per_sm=10
+occupancy W=29 L=1 mode=1 idx=5 block=128 smem=21000 blocks_per_sm=10
+zk_vanilla_permcheck_hp field=p32_2^32_minus_5 rounds=20 first_ms=4.88064 median_ms=4.4009 checksum=3649621384734
+Collecting data...
+Generating '/tmp/nsys-report-f14e.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [6%                          ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [7%                          ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [=================73%        ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/occ_smem21000/zk_vanilla_permcheck_hp_bw32_r20_specialized_cuda.nsys-rep

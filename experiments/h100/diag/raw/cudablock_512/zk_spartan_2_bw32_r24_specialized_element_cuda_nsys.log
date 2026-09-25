@@ -1,0 +1,10 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_spartan_2 field=p32_2^32_minus_5 rounds=24 first_ms=3.4487 median_ms=3.2592 checksum=1869762121240
+Collecting data...
+Generating '/tmp/nsys-report-7522.qdstrm'
+[1/1] [0%                          ] zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [0%                          ] zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [===============67%          ] zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [=================72%        ] zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [==================77%       ] zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep[1/1] [========================100%] zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/cudablock_512/zk_spartan_2_bw32_r24_specialized_element_cuda.nsys-rep

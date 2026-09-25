@@ -1,0 +1,12 @@
+occupancy W=15 L=1 mode=1 idx=0 block=128 smem=512 blocks_per_sm=16
+occupancy W=15 L=1 mode=1 idx=1 block=128 smem=512 blocks_per_sm=16
+occupancy W=15 L=1 mode=1 idx=2 block=128 smem=512 blocks_per_sm=16
+occupancy W=15 L=1 mode=1 idx=3 block=128 smem=512 blocks_per_sm=16
+occupancy W=15 L=1 mode=1 idx=4 block=128 smem=512 blocks_per_sm=16
+occupancy W=15 L=1 mode=1 idx=5 block=128 smem=512 blocks_per_sm=16
+zk_witness_id_point_1 field=p32_2^32_minus_5 rounds=20 first_ms=4.22506 median_ms=3.90858 checksum=3091985749918
+Collecting data...
+Generating '/tmp/nsys-report-5eb4.qdstrm'
+[1/1] [0%                          ] zk_witness_id_point_1_bw32_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_witness_id_point_1_bw32_r20_specialized_cuda.nsys-rep[1/1] [================70%         ] zk_witness_id_point_1_bw32_r20_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_witness_id_point_1_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw32_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_witness_id_point_1_bw32_r20_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/occ_smem0/zk_witness_id_point_1_bw32_r20_specialized_cuda.nsys-rep

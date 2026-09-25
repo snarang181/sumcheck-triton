@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_witness_non_id --rounds 28 --bit-widths 32 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_witness_non_id_bw32_r28_triton.csv
+zk_witness_non_id        field=p32_2^32_minus_5             rounds=28 first_ms=167.640 median_ms=117.097 checksum=3726647597010
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_witness_non_id_bw32_r28_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_witness_non_id --rounds 28 --bit-widths 32 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_witness_non_id_bw32_r28_cuda.csv
+zk_witness_non_id field=p32_2^32_minus_5 rounds=28 first_ms=28.4248 median_ms=28.47 checksum=3726647597010
+zk_witness_non_id        field=p32_2^32_minus_5             rounds=28 triton_ms=117.097 cuda_ms=28.47 checksum_match=true speedup=4.112996
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_witness_non_id_bw32_r28_joined.csv

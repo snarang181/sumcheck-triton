@@ -1,0 +1,6 @@
+zk_jellyfish_permcheck_hp field=p32_2^32_minus_5 rounds=24 first_ms=19.5323 median_ms=19.258 checksum=5423422964271
+Collecting data...
+Generating '/tmp/nsys-report-8017.qdstrm'
+[1/1] [0%                          ] zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [======35%                   ] zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [================68%         ] zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_jellyfish_permcheck_hp_bw32_r24_specialized_cuda.nsys-rep

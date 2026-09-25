@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads poly_a --rounds 26 --bit-widths 32 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_a_bw32_r26_triton.csv
+poly_a                   field=p32_2^32_minus_5             rounds=26 first_ms=63.459 median_ms=17.839 checksum=1463713756466
+CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_a_bw32_r26_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads poly_a --rounds 26 --bit-widths 32 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_a_bw32_r26_cuda.csv
+poly_a field=p32_2^32_minus_5 rounds=26 first_ms=3.27598 median_ms=3.12635 checksum=1463713756466
+poly_a                   field=p32_2^32_minus_5             rounds=26 triton_ms=17.839 cuda_ms=3.12635 checksum_match=true speedup=5.706015
+CAMERA-READY/h100/sweep_fixed/cases_diag_tier/poly_a_bw32_r26_joined.csv

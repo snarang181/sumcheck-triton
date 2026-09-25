@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_incomplete_add_2 --rounds 28 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out experiments/h100/sweep/cases/zk_incomplete_add_2_bw64_r28_triton.csv
+zk_incomplete_add_2      field=p64_goldilocks               rounds=28 first_ms=190.976 median_ms=145.215 checksum=9223533275619
+experiments/h100/sweep/cases/zk_incomplete_add_2_bw64_r28_triton.csv
+$ build/field_sumcheck_cuda --workloads zk_incomplete_add_2 --rounds 28 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out experiments/h100/sweep/cases/zk_incomplete_add_2_bw64_r28_cuda.csv
+zk_incomplete_add_2 field=p64_goldilocks rounds=28 first_ms=95.3403 median_ms=99.7883 checksum=9223533275619
+zk_incomplete_add_2      field=p64_goldilocks               rounds=28 triton_ms=145.215 cuda_ms=99.7883 checksum_match=true speedup=1.455231
+experiments/h100/sweep/cases/zk_incomplete_add_2_bw64_r28_joined.csv

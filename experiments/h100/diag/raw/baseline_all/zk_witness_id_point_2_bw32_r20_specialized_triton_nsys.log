@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_witness_id_point_2    field=p32_2^32_minus_5             rounds=20 first_ms=75.017 median_ms=18.095 checksum=3109515453980
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_witness_id_point_2_bw32_r20_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-9ab8.qdstrm'
+[1/1] [0%                          ] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep[1/1] [0%                          ] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep[1/1] [5%                          ] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep[1/1] [6%                          ] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep[1/1] [==============61%           ] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep[1/1] [==================78%       ] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_all/zk_witness_id_point_2_bw32_r20_specialized_triton.nsys-rep

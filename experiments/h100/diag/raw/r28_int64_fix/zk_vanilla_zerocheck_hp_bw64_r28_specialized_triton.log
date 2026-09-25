@@ -1,0 +1,2 @@
+zk_vanilla_zerocheck_hp  field=p64_goldilocks               rounds=28 first_ms=469.557 median_ms=200.985 checksum=11502908106742
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.csv

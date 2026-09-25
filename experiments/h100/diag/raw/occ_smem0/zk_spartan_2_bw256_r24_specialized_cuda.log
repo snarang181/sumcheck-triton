@@ -1,0 +1,4 @@
+occupancy W=10 L=8 mode=1 idx=0 block=128 smem=4096 blocks_per_sm=10
+occupancy W=10 L=8 mode=1 idx=1 block=128 smem=4096 blocks_per_sm=10
+occupancy W=10 L=8 mode=1 idx=2 block=128 smem=4096 blocks_per_sm=9
+zk_spartan_2 field=p255_bls12_381_scalar rounds=24 first_ms=8.96752 median_ms=8.71811 checksum=62247910145291

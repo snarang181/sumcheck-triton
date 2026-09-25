@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_verifiable_asics      field=p255_bls12_381_scalar        rounds=20 first_ms=86.560 median_ms=13.926 checksum=70416093270679
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_fixed_all/zk_verifiable_asics_bw256_r20_specialized_element_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-b1c3.qdstrm'
+[1/1] [0%                          ] zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep[1/1] [0%                          ] zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep[1/1] [8%                          ] zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep[1/1] [9%                          ] zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep[1/1] [==================78%       ] zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep[1/1] [========================100%] zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep[1/1] [========================100%] zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/baseline_fixed_all/zk_verifiable_asics_bw256_r20_specialized_element_triton.nsys-rep

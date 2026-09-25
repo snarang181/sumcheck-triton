@@ -1,0 +1,2 @@
+zk_vanilla_permcheck_hp  field=p64_goldilocks               rounds=28 first_ms=555.850 median_ms=279.974 checksum=14493999785707
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_vanilla_permcheck_hp_bw64_r28_specialized_triton.csv

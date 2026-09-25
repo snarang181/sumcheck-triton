@@ -1,0 +1,7 @@
+zk_vanilla_zerocheck_hp  field=p64_goldilocks               rounds=28 first_ms=293.431 median_ms=257.721 checksum=11502908106742
+experiments/a100/followups/diag/raw/r28_fixed/zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-9b86.qdstrm'
+[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep[1/1] [======34%                   ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep[1/1] [===============66%          ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep[1/1] [==================76%       ] zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/r28_fixed/zk_vanilla_zerocheck_hp_bw64_r28_specialized_triton.nsys-rep

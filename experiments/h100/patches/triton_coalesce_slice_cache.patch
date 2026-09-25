@@ -1,0 +1,111 @@
+diff --git a/include/triton/Dialect/TritonGPU/Transforms/CoalesceUtils.h b/include/triton/Dialect/TritonGPU/Transforms/CoalesceUtils.h
+index 9ae9322..f9ee022 100644
+--- a/include/triton/Dialect/TritonGPU/Transforms/CoalesceUtils.h
++++ b/include/triton/Dialect/TritonGPU/Transforms/CoalesceUtils.h
+@@ -6,12 +6,31 @@
+ #include "triton/Analysis/AxisInfo.h"
+ #include "triton/Dialect/TritonGPU/IR/Dialect.h"
+ 
++#include "llvm/ADT/DenseMap.h"
++#include "llvm/ADT/SetVector.h"
++#include <memory>
++#include <vector>
++
+ namespace mlir::triton::gpu {
++// mlir::getSlice(op) is the connected component of op in the def-use graph, the
++// same set for every op in it, and costs O(N^2) for a component of N ops.
++// Callers that query many memory ops of one unmodified module can share one
++// slice per component through this cache.
++class CoalesceSliceCache {
++public:
++  const llvm::SetVector<Operation *> &get(Operation *op);
++
++private:
++  llvm::DenseMap<Operation *, unsigned> index;
++  std::vector<std::unique_ptr<llvm::SetVector<Operation *>>> slices;
++};
++
+ BlockedEncodingAttr
+ buildCoalescedEncoding(ModuleAxisInfoAnalysis &axisInfoAnalysis, Operation *op,
+                        int numWarps, int threadsPerWarp,
+                        triton::gpu::CGAEncodingAttr cgaLayout,
+-                       SmallVector<int64_t> shapePerCTA);
++                       SmallVector<int64_t> shapePerCTA,
++                       CoalesceSliceCache *sliceCache = nullptr);
+ } // namespace mlir::triton::gpu
+ 
+ #endif // TRITON_DIALECT_TRITONGPU_TRANSFORMS_COALESCINGUTILS_H_
+diff --git a/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp b/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp
+index 6ba8478..ee3e346 100644
+--- a/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp
++++ b/lib/Dialect/TritonGPU/Transforms/Coalesce.cpp
+@@ -83,6 +83,8 @@ struct CoalescePass : public impl::TritonGPUCoalesceBase<CoalescePass> {
+     // the pointers should have for best memory coalescing
+     llvm::MapVector<Operation *, Attribute> layoutMap;
+     int threadsPerWarp = TritonGPUDialect::getThreadsPerWarp(moduleOp);
++    // The walk below does not modify the IR, so slices can be shared.
++    CoalesceSliceCache sliceCache;
+     moduleOp.walk([&](Operation *curr) {
+       Value ptr = getMemAccessPtr(curr);
+       if (!ptr)
+@@ -100,7 +102,8 @@ struct CoalescePass : public impl::TritonGPUCoalesceBase<CoalescePass> {
+       SmallVector<int64_t> shapePerCTA = getShapePerCTA(tensorType);
+       auto layout =
+           buildCoalescedEncoding(axisInfoAnalysis, curr, numWarps,
+-                                 threadsPerWarp, cgaLayout, shapePerCTA);
++                                 threadsPerWarp, cgaLayout, shapePerCTA,
++                                 &sliceCache);
+       layoutMap[curr] = layout;
+     });
+ 
+diff --git a/lib/Dialect/TritonGPU/Transforms/CoalesceUtils.cpp b/lib/Dialect/TritonGPU/Transforms/CoalesceUtils.cpp
+index 4705fb1..44f0cc5 100644
+--- a/lib/Dialect/TritonGPU/Transforms/CoalesceUtils.cpp
++++ b/lib/Dialect/TritonGPU/Transforms/CoalesceUtils.cpp
+@@ -1,6 +1,7 @@
+ 
+ 
+ #include "triton/Dialect/TritonGPU/Transforms/CoalesceUtils.h"
++#include "mlir/Analysis/SliceAnalysis.h"
+ #include "mlir/Support/LLVM.h"
+ #include "triton/Analysis/AxisInfo.h"
+ #include "triton/Dialect/Triton/IR/Utility.h"
+@@ -13,11 +14,25 @@
+ #define LDBG(X) LLVM_DEBUG(DBGS() << X << "\n")
+ 
+ namespace mlir::triton::gpu {
++const llvm::SetVector<Operation *> &CoalesceSliceCache::get(Operation *op) {
++  auto it = index.find(op);
++  if (it != index.end())
++    return *slices[it->second];
++  slices.push_back(
++      std::make_unique<llvm::SetVector<Operation *>>(mlir::getSlice(op)));
++  unsigned id = slices.size() - 1;
++  for (Operation *member : *slices[id])
++    index.try_emplace(member, id);
++  index.try_emplace(op, id);
++  return *slices[id];
++}
++
+ BlockedEncodingAttr
+ buildCoalescedEncoding(ModuleAxisInfoAnalysis &axisInfoAnalysis, Operation *op,
+                        int numWarps, int threadsPerWarp,
+                        triton::gpu::CGAEncodingAttr cgaLayout,
+-                       SmallVector<int64_t> shapePerCTA) {
++                       SmallVector<int64_t> shapePerCTA,
++                       CoalesceSliceCache *sliceCache) {
+   Value ptr = getMemAccessPtr(op);
+   auto refTensorType = cast<RankedTensorType>(ptr.getType());
+ 
+@@ -42,7 +57,10 @@ buildCoalescedEncoding(ModuleAxisInfoAnalysis &axisInfoAnalysis, Operation *op,
+   llvm::SmallSetVector<Operation *, 32> memAccessesSameOrder;
+   memAccessesSameOrder.insert(op);
+   if (ptr.getDefiningOp()) {
+-    for (Operation *use : mlir::getSlice(op)) {
++    SetVector<Operation *> uncached;
++    if (!sliceCache)
++      uncached = mlir::getSlice(op);
++    for (Operation *use : sliceCache ? sliceCache->get(op) : uncached) {
+       Value val = getMemAccessPtr(use);
+       if (!val || !matchesShape(val) || memAccessesSameOrder.contains(use))
+         continue;

@@ -1,0 +1,2 @@
+poly_abc                 field=p32_2^32_minus_5             rounds=14 first_ms=55.775 median_ms=4.409 checksum=1629355370006
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/poly_abc_bw32_r14_specialized_triton.csv

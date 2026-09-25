@@ -1,0 +1,12 @@
+occupancy W=29 L=8 mode=1 idx=0 block=128 smem=39000 blocks_per_sm=4
+occupancy W=29 L=8 mode=1 idx=1 block=128 smem=39000 blocks_per_sm=4
+occupancy W=29 L=8 mode=1 idx=2 block=128 smem=39000 blocks_per_sm=4
+occupancy W=29 L=8 mode=1 idx=3 block=128 smem=39000 blocks_per_sm=4
+occupancy W=29 L=8 mode=1 idx=4 block=128 smem=39000 blocks_per_sm=4
+occupancy W=29 L=8 mode=1 idx=5 block=128 smem=39000 blocks_per_sm=4
+zk_vanilla_permcheck_hp field=p255_bls12_381_scalar rounds=20 first_ms=19.8914 median_ms=18.9101 checksum=105379977019668
+Collecting data...
+Generating '/tmp/nsys-report-c7d1.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [================70%         ] zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [==================76%       ] zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/occ_smem39000/zk_vanilla_permcheck_hp_bw256_r20_specialized_cuda.nsys-rep

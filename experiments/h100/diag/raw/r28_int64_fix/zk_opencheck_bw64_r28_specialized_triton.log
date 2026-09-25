@@ -1,0 +1,2 @@
+zk_opencheck             field=p64_goldilocks               rounds=28 first_ms=407.351 median_ms=138.336 checksum=6926411686259
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/r28_int64_fix/zk_opencheck_bw64_r28_specialized_triton.csv

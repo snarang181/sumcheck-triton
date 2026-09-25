@@ -1,0 +1,6 @@
+# nsys per-launch traces and reports are large; the parsed per-kernel totals are in the
+# diag/*.jsonl records.
+*_cuda_gpu_trace.csv
+*.nsys-rep
+*.qdstrm
+*.sqlite

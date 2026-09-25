@@ -1,0 +1,6 @@
+zk_vanilla_permcheck_hp field=p255_bls12_381_scalar rounds=24 first_ms=183.017 median_ms=182.138 checksum=125514718366453
+Collecting data...
+Generating '/tmp/nsys-report-cc9e.qdstrm'
+[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r24_specialized_cuda.nsys-rep[1/1] [0%                          ] zk_vanilla_permcheck_hp_bw256_r24_specialized_cuda.nsys-rep[1/1] [=========46%                ] zk_vanilla_permcheck_hp_bw256_r24_specialized_cuda.nsys-rep[1/1] [==================75%       ] zk_vanilla_permcheck_hp_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r24_specialized_cuda.nsys-rep[1/1] [========================100%] zk_vanilla_permcheck_hp_bw256_r24_specialized_cuda.nsys-rep
+Generated:
+    /home/ubuntu/sumcheck-triton/experiments/a100/followups/diag/raw/base_all/zk_vanilla_permcheck_hp_bw256_r24_specialized_cuda.nsys-rep

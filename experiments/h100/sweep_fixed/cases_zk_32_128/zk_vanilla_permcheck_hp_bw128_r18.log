@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_vanilla_permcheck_hp --rounds 18 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_permcheck_hp_bw128_r18_triton.csv
+zk_vanilla_permcheck_hp  field=p128_mersenne_2^127_minus_1  rounds=18 first_ms=84.062 median_ms=11.569 checksum=24560265676687
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_permcheck_hp_bw128_r18_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_vanilla_permcheck_hp --rounds 18 --bit-widths 128 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_permcheck_hp_bw128_r18_cuda.csv
+zk_vanilla_permcheck_hp field=p128_mersenne_2^127_minus_1 rounds=18 first_ms=5.1157 median_ms=4.15666 checksum=24560265676687
+zk_vanilla_permcheck_hp  field=p128_mersenne_2^127_minus_1  rounds=18 triton_ms=11.569 cuda_ms=4.15666 checksum_match=true speedup=2.783244
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_vanilla_permcheck_hp_bw128_r18_joined.csv

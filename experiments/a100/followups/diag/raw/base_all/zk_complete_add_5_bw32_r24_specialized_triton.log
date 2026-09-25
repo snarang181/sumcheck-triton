@@ -1,0 +1,2 @@
+zk_complete_add_5        field=p32_2^32_minus_5             rounds=24 first_ms=73.712 median_ms=31.012 checksum=5152848351495
+experiments/a100/followups/diag/raw/base_all/zk_complete_add_5_bw32_r24_specialized_triton.csv

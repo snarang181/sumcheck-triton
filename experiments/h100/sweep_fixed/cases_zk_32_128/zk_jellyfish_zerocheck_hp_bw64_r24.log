@@ -1,0 +1,7 @@
+$ /home/ubuntu/venvs/zkduel-table5/bin/python -u benchmarks/field_sweep/triton_sweep.py --workloads zk_jellyfish_zerocheck_hp --rounds 24 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_zerocheck_hp_bw64_r24_triton.csv
+zk_jellyfish_zerocheck_hp field=p64_goldilocks               rounds=24 first_ms=161.873 median_ms=76.326 checksum=16234202295701
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_zerocheck_hp_bw64_r24_triton.csv
+$ build/field_sumcheck_cuda_fixed --workloads zk_jellyfish_zerocheck_hp --rounds 24 --bit-widths 64 --warmups 2 --repeats 10 --seed 1 --timing-mode whole-run --challenge-mode fixed --layout element --point-mode specialized --block 128 --out CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_zerocheck_hp_bw64_r24_cuda.csv
+zk_jellyfish_zerocheck_hp field=p64_goldilocks rounds=24 first_ms=58.6314 median_ms=57.1557 checksum=16234202295701
+zk_jellyfish_zerocheck_hp field=p64_goldilocks               rounds=24 triton_ms=76.326 cuda_ms=57.1557 checksum_match=true speedup=1.335405
+CAMERA-READY/h100/sweep_fixed/cases_zk_32_128/zk_jellyfish_zerocheck_hp_bw64_r24_joined.csv

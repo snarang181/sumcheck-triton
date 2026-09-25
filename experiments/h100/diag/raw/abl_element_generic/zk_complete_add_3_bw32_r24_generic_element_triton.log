@@ -1,0 +1,2 @@
+zk_complete_add_3        field=p32_2^32_minus_5             rounds=24 first_ms=88.785 median_ms=29.679 checksum=4496078752126
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/abl_element_generic/zk_complete_add_3_bw32_r24_generic_element_triton.csv

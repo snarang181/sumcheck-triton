@@ -1,0 +1,2 @@
+zk_vanilla_zerocheck_hp  field=p32_2^32_minus_5             rounds=20 first_ms=125.704 median_ms=10.327 checksum=2781495850887
+experiments/a100/followups/diag/raw/base_all/zk_vanilla_zerocheck_hp_bw32_r20_specialized_triton.csv

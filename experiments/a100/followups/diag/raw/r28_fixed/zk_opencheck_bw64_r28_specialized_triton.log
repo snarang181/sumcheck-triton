@@ -1,0 +1,2 @@
+zk_opencheck             field=p64_goldilocks               rounds=28 first_ms=325.119 median_ms=167.295 checksum=6926411686259
+experiments/a100/followups/diag/raw/r28_fixed/zk_opencheck_bw64_r28_specialized_triton.csv

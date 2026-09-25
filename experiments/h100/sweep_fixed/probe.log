@@ -1,0 +1,9 @@
+2026-09-25T18:13:10Z probe cuda_ms=3.77416
+2026-09-25T18:23:12Z probe cuda_ms=2.8791
+2026-09-25T20:07:09Z probe(split-before) cuda_ms=3.70267
+2026-09-25T20:07:51Z split aborted: probe 3.70 ms (baseline 2.90); orbit agent restarted ~20:05
+2026-09-25T20:08:34Z probe(split-gate) cuda_ms=3.78885
+2026-09-25T20:13:35Z probe(split-gate) cuda_ms=2.88365
+2026-09-25T20:49:56Z probe(split-after) cuda_ms=2.89622
+2026-09-25T20:52:25Z probe(split32-gate) cuda_ms=2.89454
+2026-09-25T21:09:32Z probe(split32-after) cuda_ms=2.89526

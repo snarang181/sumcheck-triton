@@ -1,0 +1,11 @@
+WARNING: Device-side CUDA Event completion trace is currently enabled.
+         This may increase runtime overhead and the likelihood of false
+         dependencies across CUDA Streams. If you wish to avoid this, please
+         disable the feature with --cuda-event-trace=false.
+zk_vanilla_zerocheck_hp  field=p255_bls12_381_scalar        rounds=20 first_ms=102.798 median_ms=18.071 checksum=86811450915475
+/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/treduce_all/zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton_nsys.csv
+Collecting data...
+Generating '/tmp/nsys-report-77a9.qdstrm'
+[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep[1/1] [0%                          ] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep[1/1] [6%                          ] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep[1/1] [7%                          ] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep[1/1] [================71%         ] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep[1/1] [==================78%       ] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep[1/1] [========================100%] zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep
+Generated:
+	/home/ubuntu/sumcheck-triton/experiments/h100/diag/raw/treduce_all/zk_vanilla_zerocheck_hp_bw256_r20_specialized_triton.nsys-rep
